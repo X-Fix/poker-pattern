@@ -1,0 +1,24 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": ["eslint:recommended", "eslint-config-prettier"],
+    "ignorePatterns": ["node_modules/", "public/"],
+    "overrides": [
+        {
+            "files": ["**/*.svelte"],
+            "processor": "svelte3/svelte3"
+        },
+        {
+            "files": "rollup.config.js",
+            "env": { "node": true }
+        }
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2019,
+        "sourceType": "module"
+    },
+    "plugins": ["prettier", "svelte3"],
+    "rules": {}
+}

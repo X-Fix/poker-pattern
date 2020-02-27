@@ -1,0 +1,26 @@
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor;
+}
+
+.icon--large {
+    width: 2rem;
+    height: 2rem;
+}
+
+.icon--reverse {
+    transform: scaleX(-1);
+}
+
+.icon--black {
+    color: $color-neutral-900;
+}
+
+.icon--blue {
+    color: $color-blue-800;
+}
+
+.icon--white {
+    color: $solor-neutral-0;
+}

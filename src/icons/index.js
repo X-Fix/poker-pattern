@@ -1,0 +1,16 @@
+import './busy.svg';
+import './chat.svg';
+import './component.svg';
+import './confirm.svg';
+import './copy.svg';
+import './create.svg';
+import './done.svg';
+import './folder.svg';
+import './join.svg';
+import './leave.svg';
+import './menu.svg';
+import './redo.svg';
+import './remove.svg';
+import './send.svg';
+import './snooze.svg';
+import './start.svg';
