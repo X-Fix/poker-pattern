@@ -6,7 +6,6 @@ import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
 import svgSprite from 'rollup-plugin-svg-sprite';
 
-
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
