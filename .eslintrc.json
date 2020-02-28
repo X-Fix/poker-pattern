@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "node": true
     },
     "extends": ["eslint:recommended", "eslint-config-prettier"],
     "ignorePatterns": ["node_modules/", "public/"],
@@ -13,6 +14,10 @@
         {
             "files": "rollup.config.js",
             "env": { "node": true }
+        },
+        {
+            "files": ["**/*.spec.js"],
+            "env": { "jest": true }
         }
     ],
     "parserOptions": {
