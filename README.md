@@ -73,3 +73,9 @@ I've included the `.json` extension in the various *rc filenames as this makes i
 ### Scoped vs Global CSS
 
 Svelte comes with scoped CSS out-of-the-box but ultimately I want to be able to export and deploy a stylesheet with re-usable component styles. Anything styles only required by this web-app get scoped in the relevant Svelte component file, and any exported component CSS goes into a separate `.css` file to be bundled by rollup and the CSS tools.
+
+### Local Scope
+
+Wherever possible, I use a local installation or configuration for the various tools used in this project so as to avoid conflicts with any global installations, eg.
+
+- The ESlint `nodepath` setting for VS Code is defined in a local `settings.json` file, and points to this project's installation of ESlint
