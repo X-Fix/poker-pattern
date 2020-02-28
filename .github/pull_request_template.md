@@ -1,5 +1,3 @@
-**Related Issue**
-
 #[Issue Reference]
 
 **Implementation Summary**
