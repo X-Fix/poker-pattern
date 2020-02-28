@@ -1,6 +1,6 @@
 {
     "eslint.lintTask.enable": true,
-    "eslint.nodePath": "/Users/cameronstroebel/Documents/Dev/poker-pattern/node_modules/eslint/lib/api.js",
+    "eslint.nodePath": "./node_modules/eslint/lib/api.js",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[svelte]": {
         "editor.defaultFormatter": "JamesBirtles.svelte-vscode"
