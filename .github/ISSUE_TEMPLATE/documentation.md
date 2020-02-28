@@ -1,6 +1,6 @@
 ---
 name: Documentation
-about: Suggest an improvement to this project's documentat
+about: Suggest an improvement to this project's documentation
 title: "[DOCS]"
 labels: documentation
 assignees: X-Fix
