@@ -1,0 +1,22 @@
+name: Test before merge
+
+on:
+  pull_request:
+    branches: 
+      - master
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Get latest commit
+      uses: actions/checkout@v2
+    - name: Use Node.js 10.x
+      uses: actions/setup-node@v1.1.0
+    - run: npm install
+    - run: npm run build
+    - run: npm test
+      env:
+        CI: true
