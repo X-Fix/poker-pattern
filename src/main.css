@@ -1,3 +1,4 @@
-@import 'base/normalize.css';
-@import 'base/variables.css';
-@import 'base/icons.css';
+@import '00-base/normalize.css';
+@import '00-base/variables.css';
+
+@import '01-atoms/icons.css';

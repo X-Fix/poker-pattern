@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
 
     import './main.css';
-    import './icons';
+    import './01-atoms/icons';
 
     import { transition, routeStore } from './stores/router';
     import Navigation from './components/Navigation.svelte';
