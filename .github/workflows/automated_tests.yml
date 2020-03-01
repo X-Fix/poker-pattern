@@ -1,4 +1,4 @@
-name: Test before merge
+name: CI - PR
 
 on:
     pull_request:
