@@ -1,5 +1,3 @@
-// https://kentcdodds.com/blog/implementing-a-simple-state-machine-library-in-javascript
-
 const HOME_STATE_NAME = '/';
 const ATOMS_STATE_NAME = '/atoms';
 const ICONS_STATE_NAME = '/atoms/icons';
@@ -11,49 +9,7 @@ const ICONS_TRANSITION_NAME = 'icons';
 const MOLECULES_TRANSITION_NAME = 'molecules';
 const ORGANISMS_TRANSITION_NAME = 'organisms';
 
-function getState(machineDefinition, stateName) {
-    const { options, type } = machineDefinition[stateName];
-    return {
-        options,
-        type,
-        route: stateName,
-    };
-}
-
-function createMachine(machineDefinition) {
-    const initialState = getState(
-        machineDefinition,
-        machineDefinition.initialStateName
-    );
-
-    const machine = {
-        state: initialState,
-        transition(currentState, transitionName) {
-            const currentStateDefinition =
-                machineDefinition[currentState.route];
-            const transition =
-                currentStateDefinition.transitions[transitionName];
-
-            if (!transition) {
-                console.error(
-                    `Missing target transition: ${currentState.route} -> ${transitionName}`
-                );
-                return currentState;
-            }
-
-            if (transition.action) {
-                transition.action();
-            }
-
-            machine.state = getState(machineDefinition, transition.targetState);
-
-            return machine.state;
-        },
-    };
-    return machine;
-}
-
-const machine = createMachine({
+const stateMachineDefinition = {
     initialStateName: HOME_STATE_NAME,
     [HOME_STATE_NAME]: {
         options: [
@@ -152,7 +108,7 @@ const machine = createMachine({
             [ATOMS_TRANSITION_NAME]: {
                 targetState: ATOMS_STATE_NAME,
                 action() {
-                    console.log('Going back home');
+                    console.log('Going back to Atoms');
                 },
             },
             [HOME_TRANSITION_NAME]: {
@@ -202,6 +158,6 @@ const machine = createMachine({
         },
         type: 'folder',
     },
-});
+};
 
-export default machine;
+export default stateMachineDefinition;

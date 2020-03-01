@@ -13,7 +13,6 @@
 <style>
     li {
         border-bottom: 1px solid #b0bec5;
-        font-family: 'Questrial', sans-serif;
         font-size: 20px;
         line-height: 1;
         padding: 16px;

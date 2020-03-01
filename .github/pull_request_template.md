@@ -1,9 +1,9 @@
-#[Issue Reference]
+**Resolves issue #XX**
 
 **Implementation Summary**
 
-- 
+-
 
-**Comments (if any)** 
+**Comments (if any)**
 
 N/A
