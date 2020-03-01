@@ -32,7 +32,9 @@
 </script>
 
 <style>
-
+    :global(body) {
+        font-family: 'Questrial', sans-serif;
+    }
 </style>
 
 <svelte:window on:popstate="{handleBrowserNavigation}" />
