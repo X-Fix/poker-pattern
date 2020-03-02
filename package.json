@@ -9,6 +9,7 @@
     },
     "scripts": {
         "build": "rollup -c",
+        "cypress": "cypress open",
         "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
         "lint": "eslint --ignore-path .gitignore .",
         "serve": "sirv public --single",
@@ -18,8 +19,10 @@
     },
     "devDependencies": {
         "@types/jest": "^25.1.3",
+        "cypress": "^4.1.0",
         "eslint": "^6.8.0",
         "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-cypress": "^2.10.3",
         "eslint-plugin-prettier": "^3.1.2",
         "eslint-plugin-svelte3": "^2.7.3",
         "husky": "^4.2.3",
