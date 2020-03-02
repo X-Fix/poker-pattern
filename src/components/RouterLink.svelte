@@ -48,7 +48,10 @@
 
 <!-- TODO: Convert to button (maybe) -->
 <li>
-    <a href="{routeOption.transitionName}" on:click|preventDefault="{redirect}">
+    <a
+        href="{routeOption.transitionName}"
+        on:click|preventDefault="{redirect}"
+        data-testid="{`link-${routeOption.transitionName}`}">
         <svg class="icon">
             <use xlink:href="#{routeOption.icon}"></use>
         </svg>
