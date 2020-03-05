@@ -1,5 +1,5 @@
 <script>
-    import Icon from './Icon.svelte';
+    import ReferenceCode from '../components/ReferenceCode.svelte';
     export let iconName;
 
     function capitalise(str) {
@@ -46,10 +46,9 @@
         margin: 8px 0;
     }
 
-    code {
-        background-color: #f0f0f0;
-        display: block;
-        padding: 8px;
+    /* Override the ReferenceCode style */
+    div.snippet :global(div) {
+        margin-top: 0;
     }
 
     div.snippet {
@@ -60,7 +59,9 @@
 
 <div class="icon-reference">
     <figure title="{`${iconName} icon example`}">
-        <Icon {iconName} style="height: 10rem; width: 10rem;" />
+        <svg style="height: 10rem; width: 10rem; color: #000000" class="icon">
+            <use xlink:href="#{iconName}"></use>
+        </svg>
         <figcaption>{`${iconName} icon example`}</figcaption>
     </figure>
     <h3>{heading}</h3>
@@ -69,9 +70,9 @@
     </button>
     {#if isSnippetVisible}
         <div class="snippet">
-            <code>
+            <ReferenceCode>
                 &lt;svg class="icon">&lt;use xlink:href="#{iconName}">&lt;/use>&lt;/svg>
-            </code>
+            </ReferenceCode>
         </div>
     {/if}
 </div>
