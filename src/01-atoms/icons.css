@@ -9,6 +9,11 @@
     height: 2rem;
 }
 
+.icon--huge {
+    width: 6.125rem;
+    height: 6.125rem;
+}
+
 .icon--reverse {
     transform: scaleX(-1);
 }
@@ -22,5 +27,5 @@
 }
 
 .icon--white {
-    color: $solor-neutral-0;
+    color: $color-neutral-0;
 }

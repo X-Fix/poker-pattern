@@ -2,9 +2,6 @@ describe('Route navigation', () => {
     it('should be able to traverse the various routes', () => {
         cy.visit('/');
         cy.findByText('Atoms >').click();
-        cy.findByText('Icons')
-            .click()
-            .go('back');
         cy.findByText('< Back').click();
         cy.findByText('Molecules >').click();
         cy.findByText('< Back').click();
@@ -24,5 +21,20 @@ describe('Route navigation', () => {
         cy.findByText('< Back').click();
         cy.findByText('Organisms >').click();
         cy.url().should('include', '/organisms');
+    });
+
+    it('should handle native browser navigation', () => {
+        cy.visit('/');
+        cy.findByText('Molecules >').click();
+        cy.findByText('Buttons').click();
+        cy.go('back').go('back');
+        cy.go('forward');
+        cy.findByText('Buttons').click();
+
+        cy.get('article').within(() => {
+            cy.get('h1')
+                .findByText('Buttons')
+                .should('exist');
+        });
     });
 });

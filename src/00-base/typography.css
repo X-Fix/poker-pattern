@@ -1,0 +1,24 @@
+.font-body {
+    font-size: $font-size-body;
+    line-height: $font-size-body;
+}
+
+.font-title {
+    font-size: $font-size-title;
+    line-height: $font-size-title;
+}
+
+.font-headline {
+    font-size: $font-size-headline;
+    line-height: $font-size-headline;
+}
+
+.font-card-small {
+    font-size: $font-size-card-small;
+    line-height: $font-size-card-small;
+}
+
+.font-card-large {
+    font-size: $font-size-card-large;
+    line-height: $font-size-card-large;
+}

@@ -1,4 +1,7 @@
 @import '00-base/normalize.css';
 @import '00-base/variables.css';
+@import '00-base/typography';
 
 @import '01-atoms/icons.css';
+
+@import '02-molecules/buttons.css';

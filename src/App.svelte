@@ -6,12 +6,14 @@
     import './main.css';
     import './01-atoms/icons';
 
-    import { transition, getStore } from './stores/router';
+    import { transition, getStore, syncState } from './stores/router';
     import Navigation from './components/Navigation.svelte';
     import Icons from './01-atoms/IconsReference.svelte';
+    import Buttons from './02-molecules/ButtonsReference.svelte';
 
     const referenceSheets = {
         '/atoms/icons': Icons,
+        '/molecules/buttons': Buttons,
     };
 
     let currentState;
@@ -22,12 +24,7 @@
      * Handles the user navigating back and forth with the browser arrows
      */
     function handleBrowserNavigation(event) {
-        // FIXME: Currently only accounts for navigating backwards
-        const transitionName =
-            currentState.options && currentState.options[0]
-                ? currentState.options[0].transitionName
-                : 'home';
-        transition(transitionName, true);
+        syncState(event.state.path);
     }
 </script>
 
