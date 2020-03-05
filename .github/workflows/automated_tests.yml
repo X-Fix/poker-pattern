@@ -1,10 +1,5 @@
 name: CI - PR
-
-on:
-    pull_request:
-        branches:
-            - master
-
+on: [push]
 jobs:
     test:
         name: Test
@@ -21,3 +16,11 @@ jobs:
             - run: npm test
               env:
                   CI: true
+            - name: Cypress run
+              uses: cypress-io/github-action@v1
+              with:
+                  browser: chrome
+                  headless: true
+                  install: false
+                  start: npm run serve
+                  wait-on: 'http://localhost:5000'
