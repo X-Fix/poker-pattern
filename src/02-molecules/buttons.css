@@ -1,0 +1,97 @@
+/* Defaults */
+.button {
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    background-color: $color-blue-800;
+    color: $color-neutral-0;
+    cursor: pointer;
+    display: inline-flex;
+    height: 3rem;
+    padding: 0 16px;
+    justify-content: center;
+}
+
+.button:disabled,
+.button--secondary:disabled {
+    background-color: $color-neutral-100;
+    color: $color-neutral-700;
+    cursor: default;
+}
+
+.button:not(:disabled):hover {
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+    );
+}
+
+.button:not(:disabled):active {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0.05)
+    );
+}
+
+.button__icon {
+    margin-right: 0.25rem;
+}
+
+.button:not(:disabled) > .button__icon {
+    filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.25));
+}
+
+.button:not(:disabled) > .button__text {
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* Small */
+
+.button--small {
+    height: 2.5rem;
+}
+
+/* Secondary */
+
+.button--secondary {
+    background-color: $color-neutral-0;
+    color: $color-blue-800;
+}
+
+/* Wide */
+
+.button--wide {
+    width: 322px;
+}
+
+/* Round */
+
+.button--round {
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.button--round .button__icon {
+    margin: 0;
+}
+
+/* Square */
+
+.button--square {
+    border-radius: 16px;
+    display: inline;
+    height: 160px;
+    padding: 16px;
+    width: 160px;
+}
+
+.button--square .button__icon {
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.button--square .button__text {
+    margin: 0 auto;
+}
