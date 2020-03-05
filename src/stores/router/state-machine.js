@@ -49,10 +49,9 @@ export function createMachine(machineDefinition) {
                 console.error(
                     `Transition Error: Invalid state name (${targetStateName})`
                 );
-                return machine.state;
+            } else {
+                machine.state = getState(machineDefinition, targetStateName);
             }
-
-            machine.state = getState(machineDefinition, targetStateName);
 
             return machine.state;
         },
