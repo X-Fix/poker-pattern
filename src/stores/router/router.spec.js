@@ -82,4 +82,40 @@ describe('[RouteStore]', () => {
             expect(state.route).toEqual('/');
         });
     });
+
+    describe('syncState()', () => {
+        it('should update the state according to the provided state name', () => {
+            const { getStore, syncState } = require('./router');
+            const routeStore = getStore();
+
+            let state;
+            routeStore.subscribe((emittedState) => {
+                state = emittedState;
+            });
+
+            expect(state.route).toEqual('/');
+
+            syncState('/molecules/buttons');
+
+            expect(state.route).toEqual('/molecules/buttons');
+        });
+
+        it('should not update the state if provided with an unrecognised state name', () => {
+            const { getStore, syncState } = require('./router');
+            const routeStore = getStore();
+            console.error = jest.fn();
+
+            let state;
+            routeStore.subscribe((emittedState) => {
+                state = emittedState;
+            });
+
+            expect(state.route).toEqual('/');
+
+            syncState('/this/is/not/a/valid/state');
+
+            expect(console.error).toHaveBeenCalled();
+            expect(state.route).toEqual('/');
+        });
+    });
 });

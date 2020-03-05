@@ -31,7 +31,7 @@ export function createMachine(machineDefinition) {
 
             if (!transition) {
                 console.error(
-                    `Transition Error: Invalid transition name: ${currentState.route} -> ${transitionName}`
+                    `Transition Error: Invalid transition name (${currentState.route} -> ${transitionName})`
                 );
                 return currentState;
             }
@@ -41,6 +41,18 @@ export function createMachine(machineDefinition) {
             }
 
             machine.state = getState(machineDefinition, transition.targetState);
+
+            return machine.state;
+        },
+        goToStateByName(targetStateName) {
+            if (!isValidStatename(machineDefinition, targetStateName)) {
+                console.error(
+                    `Transition Error: Invalid state name (${targetStateName})`
+                );
+                return machine.state;
+            }
+
+            machine.state = getState(machineDefinition, targetStateName);
 
             return machine.state;
         },

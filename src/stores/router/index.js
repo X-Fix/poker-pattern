@@ -1,2 +1,2 @@
-import { getStore, transition } from './router';
-export { getStore, transition };
+import { getStore, transition, syncState } from './router';
+export { getStore, transition, syncState };

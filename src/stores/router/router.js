@@ -31,7 +31,7 @@ export function getStore(initialStateName) {
     return store;
 }
 
-export function transition(transitionName, isBrowserEvent) {
+export function transition(transitionName) {
     if (!stateMachine || !setState) {
         console.error('Transition Error: RouteStore not initialised');
         return;
@@ -43,13 +43,15 @@ export function transition(transitionName, isBrowserEvent) {
     );
     setState(stateMachine.state);
 
-    if (!isBrowserEvent) {
-        // Keep the browser in sync by pushing the new state to the browser's history and setting
-        // the URL to the new path/route
-        window.history.pushState(
-            { path: stateMachine.state.route },
-            '',
-            `${window.location.origin}${stateMachine.state.route}`
-        );
-    }
+    window.history.pushState(
+        { path: stateMachine.state.route },
+        '',
+        `${window.location.origin}${stateMachine.state.route}`
+    );
+}
+
+export function syncState(targetStateName) {
+    stateMachine.state = stateMachine.goToStateByName(targetStateName);
+
+    setState(stateMachine.state);
 }
