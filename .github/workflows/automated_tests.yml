@@ -22,3 +22,4 @@ jobs:
                   browser: chrome
                   headless: true
                   start: npm run serve
+                  wait-on: 'http://localhost:5000'
