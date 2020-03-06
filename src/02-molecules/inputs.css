@@ -4,7 +4,7 @@
 }
 
 .text-input__label {
-    margin: 0 0 8px;
+    margin: 0 0 $spacing-sm;
 }
 
 .text-input__text {
@@ -14,7 +14,7 @@
     box-sizing: border-box;
     color: $color-neutral-900;
     height: 3rem;
-    padding: 12px 16px;
+    padding: 0 $spacing-md;
     text-align: left;
     width: 324px;
 }
@@ -36,7 +36,7 @@
     align-items: center;
     cursor: pointer;
     display: flex;
-    margin-bottom: 8px;
+    margin-bottom: $spacing-sm;
 }
 
 .radio-input > input[type='radio'] {
@@ -54,7 +54,7 @@
     display: flex;
     height: 24px;
     justify-content: center;
-    margin-right: 8px;
+    margin-right: $spacing-sm;
     width: 24px;
 }
 
