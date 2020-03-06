@@ -44,20 +44,46 @@
             readers as the screen readers will still pick up the default radio
             element as intended
         </p>
-        <label class="radio">
+        <label class="radio-input">
             <input type="radio" name="example" checked />
-            <span class="radio__circle" aria-hidden="true"></span>
-            <p class="radio__label">Click me</p>
+            <span class="radio-input__radio" aria-hidden="true"></span>
+            <p class="radio-input__label">Click me</p>
         </label>
-        <label class="radio">
+        <label class="radio-input">
             <input type="radio" name="example" />
-            <span class="radio__circle" aria-hidden="true"></span>
-            <p class="radio__label">Click me</p>
+            <span class="radio-input__radio" aria-hidden="true"></span>
+            <p class="radio-input__label">Click me</p>
         </label>
         <ReferenceCode>
-            &lt;label class="radio">&lt;input type="radio" name="example"
-            />&lt;span class="radio__circle" aria-hidden="true">&lt;/span>&lt;p
-            class="radio__label">Click me&lt;/p>&lt;/label>
+            &lt;label class="radio-input">&lt;input type="radio" name="example"
+            />&lt;span class="radio-input__radio"
+            aria-hidden="true">&lt;/span>&lt;p class="radio-input__label">Click
+            me&lt;/p>&lt;/label>
+        </ReferenceCode>
+    </ReferenceSection>
+
+    <ReferenceSection heading="Switch Input (checkbox)">
+        <p>
+            Switches function exactly the same way as checkboxes in that they
+            offer an independent yes/no option. Under the hood they are still
+            native checkboxes with special styling. They will also only ever by
+            used as part of a wide control / check list
+        </p>
+        <p>
+            Similarly to radio inputs, switches use a custom-styled span to
+            illustrate the switch input which must be hidden from screen readers
+            with the `aria-hidden` attribute to avoid confusion
+        </p>
+        <label class="switch-input" style="width: 156px;">
+            <p class="switch-input__label">Include me</p>
+            <input type="checkbox" />
+            <span class="switch-input__switch" aria-hidden="true"></span>
+        </label>
+        <ReferenceCode>
+            &lt;label class="switch-input">&lt;p
+            class="switch-input__label">Include me&lt;/p>&lt;input
+            type="checkbox" />&lt;span class="switch-input__switch"
+            aria-hidden="true">&lt;/span>&lt;/label>
         </ReferenceCode>
     </ReferenceSection>
 </ReferenceSheet>
