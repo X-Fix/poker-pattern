@@ -12,11 +12,11 @@
         "cypress": "cypress open",
         "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
         "lint": "eslint --ignore-path .gitignore .",
-        "postinstall": "npm run lint && npm run format && npm run build && npm test",
         "serve": "sirv public --single",
         "start": "rollup -c -w",
         "test": "jest",
-        "test:watch": "jest --watch"
+        "test:watch": "jest --watch",
+        "validate": "npm run lint && npm run format && npm run build && npm test"
     },
     "devDependencies": {
         "@types/jest": "^25.1.3",
