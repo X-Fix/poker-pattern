@@ -4,6 +4,7 @@ const ICONS_STATE_NAME = '/atoms/icons';
 const MOLECULES_STATE_NAME = '/molecules';
 const BUTTONS_STATE_NAME = '/molecules/buttons';
 const INPUTS_STATE_NAME = '/molecules/inputs';
+const CARDS_STATE_NAME = '/molecules/cards';
 const ORGANISMS_STATE_NAME = '/organisms';
 const HOME_TRANSITION_NAME = 'home';
 const ATOMS_TRANSITION_NAME = 'atoms';
@@ -11,6 +12,7 @@ const ICONS_TRANSITION_NAME = 'icons';
 const MOLECULES_TRANSITION_NAME = 'molecules';
 const BUTTONS_TRANSITION_NAME = 'buttons';
 const INPUTS_TRANSITION_NAME = 'inputs';
+const CARDS_TRANSITION_NAME = 'cards';
 const ORGANISMS_TRANSITION_NAME = 'organisms';
 
 const stateMachineDefinition = {
@@ -146,6 +148,12 @@ const stateMachineDefinition = {
                     'A list of the available inputs with tips for their implementation',
                 transitionName: INPUTS_TRANSITION_NAME,
             },
+            {
+                icon: 'component',
+                title: 'Cards',
+                description: 'The poker cards used during voting',
+                transitionName: CARDS_TRANSITION_NAME,
+            },
         ],
         transitions: {
             [HOME_TRANSITION_NAME]: {
@@ -162,6 +170,12 @@ const stateMachineDefinition = {
             },
             [INPUTS_TRANSITION_NAME]: {
                 targetState: INPUTS_STATE_NAME,
+                action() {
+                    console.log('Opening Inputs');
+                },
+            },
+            [CARDS_TRANSITION_NAME]: {
+                targetState: CARDS_STATE_NAME,
                 action() {
                     console.log('Opening Inputs');
                 },
@@ -201,6 +215,37 @@ const stateMachineDefinition = {
         type: 'component',
     },
     [INPUTS_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Molecules',
+                transitionName: MOLECULES_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [MOLECULES_TRANSITION_NAME]: {
+                targetState: MOLECULES_STATE_NAME,
+                action() {
+                    console.log('Going back to Molecules');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
+    },
+    [CARDS_STATE_NAME]: {
         options: [
             {
                 icon: 'folder',
