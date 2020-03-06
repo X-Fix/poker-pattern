@@ -38,19 +38,25 @@
             Radio inputs represent a list of "pick one" options. All options in
             the same group need to have the same `name` attribute
         </p>
+        <p>
+            Note that the span used as the custom radio circle has the
+            `aria-hidden` attribute to avoid confusion for people with screen
+            readers as the screen readers will still pick up the default radio
+            element as intended
+        </p>
         <label class="radio">
             <input type="radio" name="example" checked />
-            <span class="radio__circle"></span>
+            <span class="radio__circle" aria-hidden="true"></span>
             <p class="radio__label">Click me</p>
         </label>
         <label class="radio">
             <input type="radio" name="example" />
-            <span class="radio__circle"></span>
+            <span class="radio__circle" aria-hidden="true"></span>
             <p class="radio__label">Click me</p>
         </label>
         <ReferenceCode>
             &lt;label class="radio">&lt;input type="radio" name="example"
-            />&lt;span class="radio__circle">&lt;/span>&lt;p
+            />&lt;span class="radio__circle" aria-hidden="true">&lt;/span>&lt;p
             class="radio__label">Click me&lt;/p>&lt;/label>
         </ReferenceCode>
     </ReferenceSection>
