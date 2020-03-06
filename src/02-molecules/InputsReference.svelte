@@ -74,7 +74,7 @@
             illustrate the switch input which must be hidden from screen readers
             with the `aria-hidden` attribute to avoid confusion
         </p>
-        <label class="switch-input" style="width: 156px;">
+        <label class="switch-input" style="width: 324px;">
             <p class="switch-input__label">Include me</p>
             <input type="checkbox" />
             <span class="switch-input__switch" aria-hidden="true"></span>
