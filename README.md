@@ -1,12 +1,14 @@
 # Poker-pattern
 
+![CI - PR](https://github.com/X-Fix/poker-pattern/workflows/CI%20-%20PR/badge.svg?branch=master)
+
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Get Started](#get-started)
-- [Building and Running in Production Mode](#building-and-running-in-production-mode)
-- [Stack Details](#stack-details)
-- [Configuration Decisions](#configuration-decisions)
+-   [Introduction](#introduction)
+-   [Get Started](#get-started)
+-   [Building and Running in Production Mode](#building-and-running-in-production-mode)
+-   [Stack Details](#stack-details)
+-   [Configuration Decisions](#configuration-decisions)
 
 ## Introduction
 
@@ -42,17 +44,13 @@ npm run build
 
 You can run the newly built app with `npm run serve`. This uses [sirv](https://github.com/lukeed/sirv), which is included in the package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
 
-
-
 ## Stack Details
 
-- JS Framework: [Svelte](https://svelte.dev)
-- Build tool: [Rollup](https://rollupjs.org)
-- CSS tools: [PostCSS](https://postcss.org/), [Autoprefixer](https://autoprefixer.github.io/) and [cssnano](https://cssnano.co/)
-- SVG spritesheet plugin: [SvgSprite](https://www.npmjs.com/package/rollup-plugin-svg-sprite)
-- An attempt was made to include TypeScript (cos why not) but it doesn't seem like Svelte is ready for that
-
-
+-   JS Framework: [Svelte](https://svelte.dev)
+-   Build tool: [Rollup](https://rollupjs.org)
+-   CSS tools: [PostCSS](https://postcss.org/), [Autoprefixer](https://autoprefixer.github.io/) and [cssnano](https://cssnano.co/)
+-   SVG spritesheet plugin: [SvgSprite](https://www.npmjs.com/package/rollup-plugin-svg-sprite)
+-   An attempt was made to include TypeScript (cos why not) but it doesn't seem like Svelte is ready for that
 
 This project started as a Svelte template which lives at https://github.com/sveltejs/template.
 
@@ -66,9 +64,9 @@ The chosen spritesheet generator was just the first one that came up in a search
 
 ## Configuration Decisions
 
-### *rc.json
+### \*rc.json
 
-I've included the `.json` extension in the various *rc filenames as this makes it easier to include them in the Prettier's pattern matching. For Eslint, Prettier and Husky this worked fine by default but I needed to explicitly point Lint-Staged to the lintstagedrc.json file. Seeing as all of these tools allow custom config file names/locations, I may move all the files into a `/config` folder to clean up the root folder
+I've included the `.json` extension in the various \*rc filenames as this makes it easier to include them in the Prettier's pattern matching. For Eslint, Prettier and Husky this worked fine by default but I needed to explicitly point Lint-Staged to the lintstagedrc.json file. Seeing as all of these tools allow custom config file names/locations, I may move all the files into a `/config` folder to clean up the root folder
 
 ### Scoped vs Global CSS
 
@@ -78,4 +76,4 @@ Svelte comes with scoped CSS out-of-the-box but ultimately I want to be able to 
 
 Wherever possible, I use a local installation or configuration for the various tools used in this project so as to avoid conflicts with any global installations, eg.
 
-- The ESlint `nodepath` setting for VS Code is defined in a local `settings.json` file, and points to this project's installation of ESlint
+-   The ESlint `nodepath` setting for VS Code is defined in a local `settings.json` file, and points to this project's installation of ESlint

@@ -12,7 +12,7 @@
         margin: 0;
     }
 
-    article :global(p) {
+    article > :global(p) {
         color: #11181e;
         font-size: 1.5rem;
     }

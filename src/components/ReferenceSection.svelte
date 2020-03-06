@@ -11,6 +11,11 @@
     h2 {
         font-size: 2rem;
     }
+
+    section > :global(p) {
+        color: #11181e;
+        font-size: 1.5rem;
+    }
 </style>
 
 <section>

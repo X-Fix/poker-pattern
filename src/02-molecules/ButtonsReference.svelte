@@ -10,8 +10,8 @@
 
 <ReferenceSheet heading="Buttons">
     <p>
-        Buttons are used to trigger and action like displaying/hiding a menu, or
-        transition the voting process to the next stage
+        Button components are used to trigger and action like displaying/hiding
+        a menu, or transition the voting process to the next stage
     </p>
     <p>
         Almost every button is accompanied by an associated icon. This is to
