@@ -10,10 +10,12 @@
     import Navigation from './components/Navigation.svelte';
     import Icons from './01-atoms/IconsReference.svelte';
     import Buttons from './02-molecules/ButtonsReference.svelte';
+    import Inputs from './02-molecules/InputsReference.svelte';
 
     const referenceSheets = {
         '/atoms/icons': Icons,
         '/molecules/buttons': Buttons,
+        '/molecules/inputs': Inputs,
     };
 
     let currentState;
