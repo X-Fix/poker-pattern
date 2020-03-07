@@ -4,7 +4,7 @@ const ICONS_STATE_NAME = '/atoms/icons';
 const MOLECULES_STATE_NAME = '/molecules';
 const BUTTONS_STATE_NAME = '/molecules/buttons';
 const INPUTS_STATE_NAME = '/molecules/inputs';
-const CARDS_STATE_NAME = '/molecules/cards';
+const POKER_CARDS_STATE_NAME = '/molecules/cards';
 const ORGANISMS_STATE_NAME = '/organisms';
 const HOME_TRANSITION_NAME = 'home';
 const ATOMS_TRANSITION_NAME = 'atoms';
@@ -12,7 +12,7 @@ const ICONS_TRANSITION_NAME = 'icons';
 const MOLECULES_TRANSITION_NAME = 'molecules';
 const BUTTONS_TRANSITION_NAME = 'buttons';
 const INPUTS_TRANSITION_NAME = 'inputs';
-const CARDS_TRANSITION_NAME = 'cards';
+const POKER_CARDS_TRANSITION_NAME = 'cards';
 const ORGANISMS_TRANSITION_NAME = 'organisms';
 
 const stateMachineDefinition = {
@@ -150,9 +150,9 @@ const stateMachineDefinition = {
             },
             {
                 icon: 'component',
-                title: 'Cards',
+                title: 'Poker Cards',
                 description: 'The poker cards used during voting',
-                transitionName: CARDS_TRANSITION_NAME,
+                transitionName: POKER_CARDS_TRANSITION_NAME,
             },
         ],
         transitions: {
@@ -174,8 +174,8 @@ const stateMachineDefinition = {
                     console.log('Opening Inputs');
                 },
             },
-            [CARDS_TRANSITION_NAME]: {
-                targetState: CARDS_STATE_NAME,
+            [POKER_CARDS_TRANSITION_NAME]: {
+                targetState: POKER_CARDS_STATE_NAME,
                 action() {
                     console.log('Opening Inputs');
                 },
@@ -245,7 +245,7 @@ const stateMachineDefinition = {
         },
         type: 'component',
     },
-    [CARDS_STATE_NAME]: {
+    [POKER_CARDS_STATE_NAME]: {
         options: [
             {
                 icon: 'folder',
