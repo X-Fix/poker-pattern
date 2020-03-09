@@ -12,12 +12,14 @@
     import Buttons from './02-molecules/ButtonsReference.svelte';
     import Inputs from './02-molecules/InputsReference.svelte';
     import Cards from './02-molecules/CardsReference.svelte';
+    import ParticipantsList from './03-organisms/ParticipantsListReference.svelte';
 
     const referenceSheets = {
         '/atoms/icons': Icons,
         '/molecules/buttons': Buttons,
         '/molecules/inputs': Inputs,
         '/molecules/cards': Cards,
+        '/organisms/participants-list': ParticipantsList,
     };
 
     let currentState;
