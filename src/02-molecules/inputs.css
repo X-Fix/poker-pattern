@@ -14,7 +14,8 @@
     box-sizing: border-box;
     color: $color-neutral-900;
     height: 3rem;
-    padding: 0 $spacing-md;
+    /* Placeholder text won't vertically align middle on Firefox so have to go with this weird top/bottom padding */
+    padding: 12px $spacing-md;
     text-align: left;
     width: 324px;
 }
