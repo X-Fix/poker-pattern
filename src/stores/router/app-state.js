@@ -6,7 +6,7 @@ const BUTTONS_STATE_NAME = '/molecules/buttons';
 const INPUTS_STATE_NAME = '/molecules/inputs';
 const POKER_CARDS_STATE_NAME = '/molecules/poker-cards';
 const ORGANISMS_STATE_NAME = '/organisms';
-const PARTICIPANT_LIST_STATE_NAME = '/organisms/participant-list';
+const PARTICIPANTS_LIST_STATE_NAME = '/organisms/participants-list';
 const HOME_TRANSITION_NAME = 'home';
 const ATOMS_TRANSITION_NAME = 'atoms';
 const ICONS_TRANSITION_NAME = 'icons';
@@ -15,7 +15,7 @@ const BUTTONS_TRANSITION_NAME = 'buttons';
 const INPUTS_TRANSITION_NAME = 'inputs';
 const POKER_CARDS_TRANSITION_NAME = 'poker-cards';
 const ORGANISMS_TRANSITION_NAME = 'organisms';
-const PARTICIPANT_LIST_TRANSITION_NAME = 'participants-list';
+const PARTICIPANTS_LIST_TRANSITION_NAME = 'participants-list';
 
 const stateMachineDefinition = {
     initialStateName: HOME_STATE_NAME,
@@ -291,7 +291,7 @@ const stateMachineDefinition = {
                 title: 'Participants List',
                 description:
                     'The participant list including participant cards and the associated actions',
-                transitionName: PARTICIPANT_LIST_TRANSITION_NAME,
+                transitionName: PARTICIPANTS_LIST_TRANSITION_NAME,
             },
         ],
         transitions: {
@@ -301,16 +301,16 @@ const stateMachineDefinition = {
                     console.log('Going back home');
                 },
             },
-        },
-        [PARTICIPANT_LIST_TRANSITION_NAME]: {
-            targetState: PARTICIPANT_LIST_STATE_NAME,
-            action() {
-                console.log('Opening Participant Cards');
+            [PARTICIPANTS_LIST_TRANSITION_NAME]: {
+                targetState: PARTICIPANTS_LIST_STATE_NAME,
+                action() {
+                    console.log('Opening Participant Cards');
+                },
             },
         },
         type: 'folder',
     },
-    [PARTICIPANT_LIST_STATE_NAME]: {
+    [PARTICIPANTS_LIST_STATE_NAME]: {
         options: [
             {
                 icon: 'folder',
