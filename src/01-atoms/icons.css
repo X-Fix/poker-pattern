@@ -26,6 +26,14 @@
     color: $color-blue-800;
 }
 
+.icon--green {
+    color: $color-green-700;
+}
+
+.icon--grey {
+    color: $color-neutral-300;
+}
+
 .icon--white {
     color: $color-neutral-0;
 }
