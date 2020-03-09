@@ -52,7 +52,7 @@
         href="{routeOption.transitionName}"
         on:click|preventDefault="{redirect}"
         data-testid="{`link-${routeOption.transitionName}`}">
-        <svg class="icon">
+        <svg class="icon icon--small">
             <use xlink:href="#{routeOption.icon}"></use>
         </svg>
         <span>{routeOption.title}</span>

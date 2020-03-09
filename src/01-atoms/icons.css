@@ -1,12 +1,12 @@
 .icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     fill: currentColor;
 }
 
-.icon--large {
-    width: 2rem;
-    height: 2rem;
+.icon--small {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .icon--huge {
