@@ -1,4 +1,4 @@
-**Resolves issue #XX**
+**resolves #XX**
 
 **Implementation Summary**
 
