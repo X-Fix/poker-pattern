@@ -4,7 +4,7 @@ const ICONS_STATE_NAME = '/atoms/icons';
 const MOLECULES_STATE_NAME = '/molecules';
 const BUTTONS_STATE_NAME = '/molecules/buttons';
 const INPUTS_STATE_NAME = '/molecules/inputs';
-const POKER_CARDS_STATE_NAME = '/molecules/cards';
+const POKER_CARDS_STATE_NAME = '/molecules/poker-cards';
 const ORGANISMS_STATE_NAME = '/organisms';
 const PARTICIPANT_LIST_STATE_NAME = '/organisms/participant-list';
 const HOME_TRANSITION_NAME = 'home';
@@ -13,7 +13,7 @@ const ICONS_TRANSITION_NAME = 'icons';
 const MOLECULES_TRANSITION_NAME = 'molecules';
 const BUTTONS_TRANSITION_NAME = 'buttons';
 const INPUTS_TRANSITION_NAME = 'inputs';
-const POKER_CARDS_TRANSITION_NAME = 'cards';
+const POKER_CARDS_TRANSITION_NAME = 'poker-cards';
 const ORGANISMS_TRANSITION_NAME = 'organisms';
 const PARTICIPANT_LIST_TRANSITION_NAME = 'participants-list';
 
@@ -179,7 +179,7 @@ const stateMachineDefinition = {
             [POKER_CARDS_TRANSITION_NAME]: {
                 targetState: POKER_CARDS_STATE_NAME,
                 action() {
-                    console.log('Opening Inputs');
+                    console.log('Opening Poker Cards');
                 },
             },
         },
