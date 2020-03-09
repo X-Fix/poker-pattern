@@ -1,12 +1,12 @@
 .icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     fill: currentColor;
 }
 
-.icon--large {
-    width: 2rem;
-    height: 2rem;
+.icon--small {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .icon--huge {
@@ -24,6 +24,14 @@
 
 .icon--blue {
     color: $color-blue-800;
+}
+
+.icon--green {
+    color: $color-green-700;
+}
+
+.icon--grey {
+    color: $color-neutral-300;
 }
 
 .icon--white {

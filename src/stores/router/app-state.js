@@ -4,16 +4,18 @@ const ICONS_STATE_NAME = '/atoms/icons';
 const MOLECULES_STATE_NAME = '/molecules';
 const BUTTONS_STATE_NAME = '/molecules/buttons';
 const INPUTS_STATE_NAME = '/molecules/inputs';
-const POKER_CARDS_STATE_NAME = '/molecules/cards';
+const POKER_CARDS_STATE_NAME = '/molecules/poker-cards';
 const ORGANISMS_STATE_NAME = '/organisms';
+const PARTICIPANTS_LIST_STATE_NAME = '/organisms/participants-list';
 const HOME_TRANSITION_NAME = 'home';
 const ATOMS_TRANSITION_NAME = 'atoms';
 const ICONS_TRANSITION_NAME = 'icons';
 const MOLECULES_TRANSITION_NAME = 'molecules';
 const BUTTONS_TRANSITION_NAME = 'buttons';
 const INPUTS_TRANSITION_NAME = 'inputs';
-const POKER_CARDS_TRANSITION_NAME = 'cards';
+const POKER_CARDS_TRANSITION_NAME = 'poker-cards';
 const ORGANISMS_TRANSITION_NAME = 'organisms';
+const PARTICIPANTS_LIST_TRANSITION_NAME = 'participants-list';
 
 const stateMachineDefinition = {
     initialStateName: HOME_STATE_NAME,
@@ -177,7 +179,7 @@ const stateMachineDefinition = {
             [POKER_CARDS_TRANSITION_NAME]: {
                 targetState: POKER_CARDS_STATE_NAME,
                 action() {
-                    console.log('Opening Inputs');
+                    console.log('Opening Poker Cards');
                 },
             },
         },
@@ -284,6 +286,13 @@ const stateMachineDefinition = {
                 description: 'Go back a level',
                 transitionName: HOME_TRANSITION_NAME,
             },
+            {
+                icon: 'component',
+                title: 'Participants List',
+                description:
+                    'The participant list including participant cards and the associated actions',
+                transitionName: PARTICIPANTS_LIST_TRANSITION_NAME,
+            },
         ],
         transitions: {
             [HOME_TRANSITION_NAME]: {
@@ -292,8 +301,45 @@ const stateMachineDefinition = {
                     console.log('Going back home');
                 },
             },
+            [PARTICIPANTS_LIST_TRANSITION_NAME]: {
+                targetState: PARTICIPANTS_LIST_STATE_NAME,
+                action() {
+                    console.log('Opening Participant Cards');
+                },
+            },
         },
         type: 'folder',
+    },
+    [PARTICIPANTS_LIST_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Organisms',
+                transitionName: ORGANISMS_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [ORGANISMS_TRANSITION_NAME]: {
+                targetState: ORGANISMS_STATE_NAME,
+                action() {
+                    console.log('Going back to Organisms');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
     },
 };
 

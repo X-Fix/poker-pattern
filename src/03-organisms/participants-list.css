@@ -1,0 +1,72 @@
+.participants-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.participant {
+    align-items: center;
+    border-bottom: 1px solid $color-neutral-200;
+    box-sizing: border-box;
+    display: flex;
+    height: 4.5rem;
+    justify-content: space-between;
+    padding: 0 $spacing-md;
+}
+
+.participant--me {
+    border-left: $spacing-sm solid $color-blue-800;
+    padding-left: $spacing-sm;
+}
+
+.participant--outlier {
+    border-right: $spacing-sm solid $color-neutral-200;
+    padding-right: $spacing-sm;
+}
+
+.participant__name {
+    flex: 1;
+}
+
+.participant--owner .participant__name {
+    text-decoration: underline;
+}
+
+.participant__state {
+    margin-right: $spacing-sm;
+}
+
+.participant__state--busy {
+    color: $color-neutral-900;
+}
+
+.participant__state--done {
+    color: $color-green-700;
+}
+
+.participant__state--disconnected {
+    color: $color-neutral-200;
+}
+
+.participant__action {
+    color: $color-blue-800;
+    cursor: pointer;
+
+    /* Override button defaults */
+    background-color: transparent;
+    border: none;
+    line-height: 1;
+    padding: 0;
+}
+
+.participant__action .icon {
+    filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.25));
+}
+
+.participant__action:not(:active):hover .icon {
+    filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.375));
+}
+
+.participant__score {
+    color: $color-blue-800;
+}

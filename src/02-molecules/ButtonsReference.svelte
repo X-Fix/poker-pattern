@@ -25,21 +25,21 @@
     <ReferenceSection heading="Default Button (eg. 'Menu' button)">
         <p>Default buttons use a title-size font and a large icon</p>
         <button class="button" style="margin-right: 8px;">
-            <svg class="button__icon icon icon--large">
+            <svg class="button__icon icon">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-title">Menu</span>
         </button>
         <button class="button" disabled>
-            <svg class="button__icon icon icon--large">
+            <svg class="button__icon icon">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-title">Disabled</span>
         </button>
         <ReferenceCode>
-            &lt;button class="button">&lt;svg class="button__icon icon
-            icon--large">&lt;use xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span
-            class="button__text font-title">Menu&lt;/span>&lt;/button>
+            &lt;button class="button">&lt;svg class="button__icon icon">&lt;use
+            xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
+            font-title">Menu&lt;/span>&lt;/button>
         </ReferenceCode>
     </ReferenceSection>
 
@@ -49,20 +49,20 @@
             and background-color adjustment
         </p>
         <button class="button button--secondary" style="margin-right: 8px;">
-            <svg class="button__icon icon icon--large">
+            <svg class="button__icon icon">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-title">Menu</span>
         </button>
         <button class="button button--secondary" disabled>
-            <svg class="button__icon icon icon--large">
+            <svg class="button__icon icon">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-title">Disabled</span>
         </button>
         <ReferenceCode>
             &lt;button class="button button--secondary">&lt;svg
-            class="button__icon icon icon--large">&lt;use
+            class="button__icon icon">&lt;use
             xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
             font-title">Menu&lt;/span>&lt;/button>
         </ReferenceCode>
@@ -74,21 +74,22 @@
             a class modifier
         </p>
         <button class="button button--small" style="margin-right: 8px;">
-            <svg class="button__icon icon icon">
+            <svg class="button__icon icon icon--small">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-body">Menu</span>
         </button>
         <button class="button button--small" disabled>
-            <svg class="button__icon icon icon">
+            <svg class="button__icon icon icon--small">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-body">Disabled</span>
         </button>
         <ReferenceCode>
             &lt;button class="button button--small">&lt;svg class="button__icon
-            icon">&lt;use xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span
-            class="button__text font-body">Menu&lt;/span>&lt;/button>
+            icon icon--small">&lt;use
+            xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
+            font-body">Menu&lt;/span>&lt;/button>
         </ReferenceCode>
     </ReferenceSection>
 
@@ -98,22 +99,22 @@
             screens or a large percentage on larger screens
         </p>
         <button class="button button--wide" style="margin-right: 8px;">
-            <svg class="button__icon icon icon--large">
+            <svg class="button__icon icon">
                 <use xlink:href="#create"></use>
             </svg>
             <span class="button__text font-title">Create New Session</span>
         </button>
         <button class="button button--wide" disabled>
-            <svg class="button__icon icon icon--large">
+            <svg class="button__icon icon">
                 <use xlink:href="#create"></use>
             </svg>
             <span class="button__text font-title">Create New Session</span>
         </button>
         <ReferenceCode>
             &lt;button class="button button--wide">&lt;svg class="button__icon
-            icon icon--large">&lt;use
-            xlink:href="#create">&lt;/use>&lt;/svg>&lt;span class="button__text
-            font-title">Create New Session&lt;/span>&lt;/button>
+            icon">&lt;use xlink:href="#create">&lt;/use>&lt;/svg>&lt;span
+            class="button__text font-title">Create New
+            Session&lt;/span>&lt;/button>
         </ReferenceCode>
     </ReferenceSection>
 
@@ -123,19 +124,18 @@
             enough space to fit text with the icon.
         </p>
         <button class="button button--round" style="margin-right: 8px;">
-            <svg class="button__icon icon icon--large">
+            <svg class="button__icon icon">
                 <use xlink:href="#chat"></use>
             </svg>
         </button>
         <button class="button button--round" disabled>
-            <svg class="button__icon icon icon--large">
+            <svg class="button__icon icon">
                 <use xlink:href="#chat"></use>
             </svg>
         </button>
         <ReferenceCode>
             &lt;button class="button button--round">&lt;svg class="button__icon
-            icon icon--large">&lt;use
-            xlink:href="#chat">&lt;/use>&lt;/svg>&lt;/button>
+            icon">&lt;use xlink:href="#chat">&lt;/use>&lt;/svg>&lt;/button>
         </ReferenceCode>
     </ReferenceSection>
 
