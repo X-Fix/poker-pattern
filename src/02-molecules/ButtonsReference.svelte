@@ -25,19 +25,20 @@
     <ReferenceSection heading="Default Button (eg. 'Menu' button)">
         <p>Default buttons use a title-size font and a large icon</p>
         <button class="button" style="margin-right: 8px;">
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-title">Menu</span>
         </button>
         <button class="button" disabled>
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-title">Disabled</span>
         </button>
         <ReferenceCode>
-            &lt;button class="button">&lt;svg class="button__icon icon">&lt;use
+            &lt;button class="button">&lt;svg class="button__icon icon"
+            aria-hidden="true">&lt;use
             xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
             font-title">Menu&lt;/span>&lt;/button>
         </ReferenceCode>
@@ -49,20 +50,20 @@
             and background-color adjustment
         </p>
         <button class="button button--secondary" style="margin-right: 8px;">
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-title">Menu</span>
         </button>
         <button class="button button--secondary" disabled>
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-title">Disabled</span>
         </button>
         <ReferenceCode>
             &lt;button class="button button--secondary">&lt;svg
-            class="button__icon icon">&lt;use
+            class="button__icon icon" aria-hidden="true">&lt;use
             xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
             font-title">Menu&lt;/span>&lt;/button>
         </ReferenceCode>
@@ -79,21 +80,22 @@
             but remains readable by screen readers
         </p>
         <button class="button button--header" style="margin-right: 8px;">
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-body">Menu</span>
         </button>
         <button class="button button--header" disabled>
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-body">Disabled</span>
         </button>
         <ReferenceCode>
             &lt;button class="button button--header">&lt;svg class="button__icon
-            icon">&lt;use xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span
-            class="button__text font-body">Menu&lt;/span>&lt;/button>
+            icon" aria-hidden="true">&lt;use
+            xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
+            font-body">Menu&lt;/span>&lt;/button>
         </ReferenceCode>
     </ReferenceSection>
 
@@ -103,22 +105,22 @@
             screens or a large percentage on larger screens
         </p>
         <button class="button button--wide" style="margin-right: 8px;">
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#create"></use>
             </svg>
             <span class="button__text font-title">Create New Session</span>
         </button>
         <button class="button button--wide" disabled>
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#create"></use>
             </svg>
             <span class="button__text font-title">Create New Session</span>
         </button>
         <ReferenceCode>
             &lt;button class="button button--wide">&lt;svg class="button__icon
-            icon">&lt;use xlink:href="#create">&lt;/use>&lt;/svg>&lt;span
-            class="button__text font-title">Create New
-            Session&lt;/span>&lt;/button>
+            icon" aria-hidden="true">&lt;use
+            xlink:href="#create">&lt;/use>&lt;/svg>&lt;span class="button__text
+            font-title">Create New Session&lt;/span>&lt;/button>
         </ReferenceCode>
     </ReferenceSection>
 
@@ -129,20 +131,20 @@
             font size
         </p>
         <button class="button button--square" style="margin-right: 8px;">
-            <svg class="button__icon icon icon--huge">
+            <svg class="button__icon icon icon--huge" aria-hidden="true">
                 <use xlink:href="#join"></use>
             </svg>
             <span class="button__text font-body">Join Session</span>
         </button>
         <button class="button button--square" disabled>
-            <svg class="button__icon icon icon--huge">
+            <svg class="button__icon icon icon--huge" aria-hidden="true">
                 <use xlink:href="#join"></use>
             </svg>
             <span class="button__text font-body">Join Session</span>
         </button>
         <ReferenceCode>
             &lt;button class="button button--square">&lt;svg class="button__icon
-            icon icon--huge">&lt;use
+            icon icon--huge" aria-hidden="true">&lt;use
             xlink:href="#join">&lt;/use>&lt;/svg>&lt;span class="button__text
             font-body">Join Session&lt;/span>&lt;/button>
         </ReferenceCode>

@@ -125,7 +125,7 @@
                     class="participant__action"
                     title="Click to remove this participant"
                     aria-label="Click to remove this participant">
-                    <svg class="icon icon--blue">
+                    <svg class="icon icon--blue" aria-hidden="true">
                         <use xlink:href="#remove"></use>
                     </svg>
                 </button>
@@ -156,7 +156,7 @@
                     class="participant__action"
                     title="Click to remove this participant"
                     aria-label="Click to remove this participant">
-                    <svg class="icon icon--blue">
+                    <svg class="icon icon--blue" aria-hidden="true">
                         <use xlink:href="#remove"></use>
                     </svg>
                 </button>
@@ -173,7 +173,7 @@
                     class="participant__action"
                     title="Click to remove this participant"
                     aria-label="Click to remove this participant">
-                    <svg class="icon icon--blue">
+                    <svg class="icon icon--blue" aria-hidden="true">
                         <use xlink:href="#remove"></use>
                     </svg>
                 </button>
