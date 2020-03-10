@@ -10,6 +10,7 @@ const PARTICIPANTS_LIST_STATE_NAME = '/organisms/participants-list';
 const HEADER_STATE_NAME = '/organisms/header';
 const FOOTER_STATE_NAME = '/organisms/footer';
 const CHOOSE_FORM_STATE_NAME = '/organisms/choose-form';
+const CREATE_SESSION_FORM_STATE_NAME = '/organisms/create-session-form';
 const HOME_TRANSITION_NAME = 'home';
 const ATOMS_TRANSITION_NAME = 'atoms';
 const ICONS_TRANSITION_NAME = 'icons';
@@ -22,6 +23,7 @@ const PARTICIPANTS_LIST_TRANSITION_NAME = 'participants-list';
 const HEADER_TRANSITION_NAME = 'header';
 const FOOTER_TRANSITION_NAME = 'footer';
 const CHOOSE_FORM_TRANSITION_NAME = 'choose-form';
+const CREATE_SESSION_FORM_TRANSITION_NAME = 'create-session-form';
 
 const stateMachineDefinition = {
     initialStateName: HOME_STATE_NAME,
@@ -318,6 +320,12 @@ const stateMachineDefinition = {
                     'The initial form for choosing to either create or join a session',
                 transitionName: CHOOSE_FORM_TRANSITION_NAME,
             },
+            {
+                icon: 'component',
+                title: 'Create Session Form',
+                description: 'The form for creating a new session',
+                transitionName: CREATE_SESSION_FORM_TRANSITION_NAME,
+            },
         ],
         transitions: {
             [HOME_TRANSITION_NAME]: {
@@ -348,6 +356,12 @@ const stateMachineDefinition = {
                 targetState: CHOOSE_FORM_STATE_NAME,
                 action() {
                     console.log('Opening Choose Form');
+                },
+            },
+            [CREATE_SESSION_FORM_TRANSITION_NAME]: {
+                targetState: CREATE_SESSION_FORM_STATE_NAME,
+                action() {
+                    console.log('Opening Create Session Form');
                 },
             },
         },
@@ -447,6 +461,37 @@ const stateMachineDefinition = {
         type: 'component',
     },
     [CHOOSE_FORM_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Organisms',
+                transitionName: ORGANISMS_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [ORGANISMS_TRANSITION_NAME]: {
+                targetState: ORGANISMS_STATE_NAME,
+                action() {
+                    console.log('Going back to Organisms');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
+    },
+    [CREATE_SESSION_FORM_STATE_NAME]: {
         options: [
             {
                 icon: 'folder',
