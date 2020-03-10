@@ -1,13 +1,24 @@
 .menu {
     background-color: $color-neutral-0;
-    border-bottom: 2px solid $color-blue-800;
     box-sizing: border-box;
-    padding: $spacing-sm $spacing-md $spacing-sm;
+    height: 0;
+    overflow: hidden;
+    padding-left: $spacing-md;
+    padding-right: $spacing-md;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.6, 1);
     width: 100%;
 }
 
+.menu--open {
+    border-bottom: 2px solid $color-blue-800;
+    height: 232px;
+    padding-bottom: $spacing-sm;
+    padding-top: $spacing-sm;
+}
+
 .menu__heading {
-    margin: $spacing-md 0;
+    margin: $spacing-md 0 $spacing-sm;
 }
 
 .menu__switch,

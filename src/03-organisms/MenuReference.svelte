@@ -2,6 +2,11 @@
     import ReferenceSheet from '../components/ReferenceSheet.svelte';
     import ReferenceSection from '../components/ReferenceSection.svelte';
     import ReferenceCode from '../components/ReferenceCode.svelte';
+
+    let isMenuOpen = false;
+    function toggleMenu() {
+        isMenuOpen = !isMenuOpen;
+    }
 </script>
 
 <style>
@@ -14,15 +19,16 @@
         toggled in the header component
     </p>
 
-    <ReferenceSection heading="default">
+    <ReferenceSection heading="Default">
         <p>
             There's only one type of menu. It will span the width of the screen
             on smaller screen-sizes, and then adopt a max-width on larger
             screens
         </p>
 
+        <button on:click="{toggleMenu}">Toggle menu</button>
         <div style="padding: 32px; background-color: #E3F1FD;">
-            <div class="menu">
+            <div class="menu" class:menu--open="{isMenuOpen}">
                 <h2 class="menu__heading font-title">Settings</h2>
                 <label class="menu__switch switch-input">
                     <p class="switch-input__label">Play notification sounds</p>
