@@ -1,0 +1,64 @@
+.footer {
+    align-items: center;
+    background-color: $color-neutral-0;
+    box-sizing: border-box;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    padding: 0 $spacing-md;
+    position: fixed;
+
+    /* Center a position: fixed element */
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Span the scren width until a certain point */
+    width: 100%;
+    max-width: 1024px;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: reverse;
+}
+
+/* If there is a CTA... */
+.footer__cta + .footer__status-text {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+/* Actions */
+
+.footer--actions .footer__content {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.footer--actions .footer__actions {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .footer--actions {
+        justify-content: space-between;
+    }
+
+    .footer--actions .footer__content {
+        opacity: 1;
+        position: static;
+        width: auto;
+    }
+
+    .footer--actions .footer__actions {
+        display: flex;
+        justify-content: end;
+        width: auto;
+    }
+}

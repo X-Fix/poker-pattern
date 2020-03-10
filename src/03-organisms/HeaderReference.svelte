@@ -8,6 +8,7 @@
 
 </style>
 
+<div style="height: 60px;"></div>
 <ReferenceSheet heading="Header">
     <p>
         The main header appears at the top of the page at all times. Before
@@ -21,7 +22,7 @@
     </p>
     <ReferenceSection heading="Default">
         <p>
-            There is only one style of heading. Resize this webpage to see the
+            There is only one style of header. Resize this webpage to see the
             various header versions
         </p>
 

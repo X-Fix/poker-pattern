@@ -14,6 +14,7 @@
     import PokerCards from './02-molecules/PokerCardsReference.svelte';
     import ParticipantsList from './03-organisms/ParticipantsListReference.svelte';
     import Header from './03-organisms/HeaderReference.svelte';
+    import Footer from './03-organisms/FooterReference.svelte';
 
     const referenceSheets = {
         '/atoms/icons': Icons,
@@ -22,6 +23,7 @@
         '/molecules/poker-cards': PokerCards,
         '/organisms/participants-list': ParticipantsList,
         '/organisms/header': Header,
+        '/organisms/footer': Footer,
     };
 
     let currentState;

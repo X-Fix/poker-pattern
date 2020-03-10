@@ -2,12 +2,18 @@
     background-color: $color-blue-800;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     font-weight: 400;
+    height: 64px;
+    left: 0;
+    position: fixed;
     text-align: center;
+    top: 0;
+    width: 100%;
 }
 
 .header__content {
     align-items: center;
     display: flex;
+    height: 100%;
     max-width: 1024px;
     margin: 0 auto;
 }

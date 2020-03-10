@@ -50,6 +50,13 @@ describe('Route navigation', () => {
                 .should('exist');
         });
         cy.go('back');
+        cy.findByText('Footer').click();
+        cy.get('article').within(() => {
+            cy.get('h1')
+                .findByText('Footer')
+                .should('exist');
+        });
+        cy.go('back');
         cy.findByText('< Back').click();
     });
 
