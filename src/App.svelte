@@ -17,6 +17,7 @@
     import Footer from './03-organisms/FooterReference.svelte';
     import ChooseForm from './03-organisms/ChooseFormReference.svelte';
     import CreateSessionForm from './03-organisms/CreateSessionFormReference.svelte';
+    import JoinSessionForm from './03-organisms/JoinSessionFormReference.svelte';
 
     const referenceSheets = {
         '/atoms/icons': Icons,
@@ -28,6 +29,7 @@
         '/organisms/footer': Footer,
         '/organisms/choose-form': ChooseForm,
         '/organisms/create-session-form': CreateSessionForm,
+        '/organisms/join-session-form': JoinSessionForm,
     };
 
     let currentState;

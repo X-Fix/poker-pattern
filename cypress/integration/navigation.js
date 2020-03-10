@@ -71,6 +71,13 @@ describe('Route navigation', () => {
                 .should('exist');
         });
         cy.go('back');
+        cy.findByText('Join Session Form').click();
+        cy.get('article').within(() => {
+            cy.get('h1')
+                .findByText('Join Session Form')
+                .should('exist');
+        });
+        cy.go('back');
         cy.findByText('< Back').click();
     });
 
