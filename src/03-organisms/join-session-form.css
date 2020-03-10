@@ -1,0 +1,25 @@
+.join-session-form {
+    box-sizing: border-box;
+    height: 360px;
+    padding: $spacing-md;
+    width: 360px;
+}
+
+.join-session-form__heading {
+    margin: $spacing-sm 0 $spacing-xlg;
+}
+
+.join-session-form__text-input {
+    margin: $spacing-md 0;
+}
+
+.join-session-form__submit-button {
+    margin-top: $spacing-md;
+}
+
+@media screen and (min-width: 758px) {
+    .join-session-form {
+        background-color: $color-neutral-0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+}
