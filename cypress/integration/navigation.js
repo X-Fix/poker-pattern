@@ -78,6 +78,13 @@ describe('Route navigation', () => {
                 .should('exist');
         });
         cy.go('back');
+        cy.findByText('Menu').click();
+        cy.get('article').within(() => {
+            cy.get('h1')
+                .findByText('Menu')
+                .should('exist');
+        });
+        cy.go('back');
         cy.findByText('< Back').click();
     });
 
