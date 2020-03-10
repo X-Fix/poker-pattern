@@ -2,10 +2,54 @@ describe('Route navigation', () => {
     it('should be able to traverse the various routes', () => {
         cy.visit('/');
         cy.findByText('Atoms >').click();
+        cy.findByText('Icons').click();
+        cy.get('article').within(() => {
+            cy.get('h1')
+                .findByText('Icons')
+                .should('exist');
+        });
+        cy.go('back');
         cy.findByText('< Back').click();
+
         cy.findByText('Molecules >').click();
+        cy.findByText('Buttons').click();
+        cy.get('article').within(() => {
+            cy.get('h1')
+                .findByText('Buttons')
+                .should('exist');
+        });
+        cy.go('back');
+        cy.findByText('Inputs').click();
+        cy.get('article').within(() => {
+            cy.get('h1')
+                .findByText('Inputs')
+                .should('exist');
+        });
+        cy.go('back');
+        cy.findByText('Poker Cards').click();
+        cy.get('article').within(() => {
+            cy.get('h1')
+                .findByText('Poker Cards')
+                .should('exist');
+        });
+        cy.go('back');
         cy.findByText('< Back').click();
+
         cy.findByText('Organisms >').click();
+        cy.findByText('Participants List').click();
+        cy.get('article').within(() => {
+            cy.get('h1')
+                .findByText('Participants List')
+                .should('exist');
+        });
+        cy.go('back');
+        cy.findByText('Header').click();
+        cy.get('article').within(() => {
+            cy.get('h1')
+                .findByText('Header')
+                .should('exist');
+        });
+        cy.go('back');
         cy.findByText('< Back').click();
     });
 

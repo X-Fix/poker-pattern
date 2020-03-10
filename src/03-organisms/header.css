@@ -1,0 +1,19 @@
+.header {
+    background-color: $color-blue-800;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    text-align: center;
+}
+
+.header__content {
+    align-items: center;
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header__heading {
+    color: $color-neutral-0;
+    flex: 1;
+    font-weight: 400;
+}

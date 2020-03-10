@@ -79,6 +79,12 @@
     color: $color-blue-800;
 }
 
+/* Dark */
+
+.button--dark {
+    background-color: $color-blue-900;
+}
+
 /* Wide */
 
 .button--wide {

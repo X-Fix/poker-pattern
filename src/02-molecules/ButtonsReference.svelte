@@ -69,6 +69,26 @@
         </ReferenceCode>
     </ReferenceSection>
 
+    <ReferenceSection heading="Dark Button">
+        <p>
+            Dark buttons get a `--dark` modifier. This applies a
+            background-color adjustment. Primarily used to indicate when a menu
+            button's options are being displayed
+        </p>
+        <button class="button button--header button--dark">
+            <svg class="button__icon icon" aria-hidden="true">
+                <use xlink:href="#menu"></use>
+            </svg>
+            <span class="button__text font-title">Menu</span>
+        </button>
+        <ReferenceCode>
+            &lt;button class="button button--dark">&lt;svg class="button__icon
+            icon" aria-hidden="true">&lt;use
+            xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
+            font-title">Menu&lt;/span>&lt;/button>
+        </ReferenceCode>
+    </ReferenceSection>
+
     <ReferenceSection heading="Header Button">
         <p>
             Header buttons appear in the page header. On larger screens they
