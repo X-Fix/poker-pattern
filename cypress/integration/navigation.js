@@ -57,6 +57,13 @@ describe('Route navigation', () => {
                 .should('exist');
         });
         cy.go('back');
+        cy.findByText('Choose Form').click();
+        cy.get('article').within(() => {
+            cy.get('h1')
+                .findByText('Choose Form')
+                .should('exist');
+        });
+        cy.go('back');
         cy.findByText('< Back').click();
     });
 

@@ -15,6 +15,7 @@
     import ParticipantsList from './03-organisms/ParticipantsListReference.svelte';
     import Header from './03-organisms/HeaderReference.svelte';
     import Footer from './03-organisms/FooterReference.svelte';
+    import ChooseForm from './03-organisms/ChooseFormReference.svelte';
 
     const referenceSheets = {
         '/atoms/icons': Icons,
@@ -24,6 +25,7 @@
         '/organisms/participants-list': ParticipantsList,
         '/organisms/header': Header,
         '/organisms/footer': Footer,
+        '/organisms/choose-form': ChooseForm,
     };
 
     let currentState;
