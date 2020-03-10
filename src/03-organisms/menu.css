@@ -1,0 +1,42 @@
+.menu {
+    background-color: $color-neutral-0;
+    border-bottom: 2px solid $color-blue-800;
+    box-sizing: border-box;
+    padding: $spacing-sm $spacing-md $spacing-sm;
+    width: 100%;
+}
+
+.menu__heading {
+    margin: $spacing-md 0;
+}
+
+.menu__switch,
+.menu__action {
+    margin-bottom: $spacing-sm;
+}
+
+.menu__action {
+    color: $color-blue-800;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    /* Override element defaults */
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.menu__action-text {
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.25);
+}
+
+.menu__action-icon {
+    filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.25));
+}
+
+@media screen and (min-width: 568px) {
+    .menu {
+        width: 360px;
+    }
+}
