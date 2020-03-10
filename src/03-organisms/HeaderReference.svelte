@@ -22,7 +22,7 @@
     </p>
     <ReferenceSection heading="Default">
         <p>
-            There is only one style of heading. Resize this webpage to see the
+            There is only one style of header. Resize this webpage to see the
             various header versions
         </p>
 
