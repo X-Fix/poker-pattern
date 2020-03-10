@@ -25,19 +25,20 @@
     <ReferenceSection heading="Default Button (eg. 'Menu' button)">
         <p>Default buttons use a title-size font and a large icon</p>
         <button class="button" style="margin-right: 8px;">
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-title">Menu</span>
         </button>
         <button class="button" disabled>
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-title">Disabled</span>
         </button>
         <ReferenceCode>
-            &lt;button class="button">&lt;svg class="button__icon icon">&lt;use
+            &lt;button class="button">&lt;svg class="button__icon icon"
+            aria-hidden="true">&lt;use
             xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
             font-title">Menu&lt;/span>&lt;/button>
         </ReferenceCode>
@@ -49,45 +50,50 @@
             and background-color adjustment
         </p>
         <button class="button button--secondary" style="margin-right: 8px;">
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-title">Menu</span>
         </button>
         <button class="button button--secondary" disabled>
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-title">Disabled</span>
         </button>
         <ReferenceCode>
             &lt;button class="button button--secondary">&lt;svg
-            class="button__icon icon">&lt;use
+            class="button__icon icon" aria-hidden="true">&lt;use
             xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
             font-title">Menu&lt;/span>&lt;/button>
         </ReferenceCode>
     </ReferenceSection>
 
-    <ReferenceSection heading="Small Button">
+    <ReferenceSection heading="Header Button">
         <p>
-            Small buttons use a body-size font and default icon size, along with
-            a class modifier
+            Header buttons appear in the page header. On larger screens they
+            display smaller than default buttons, and on smaller screens they
+            are reduced to round icon buttons.
         </p>
-        <button class="button button--small" style="margin-right: 8px;">
-            <svg class="button__icon icon icon--small">
+        <p>
+            Even when reduced, the text still exists. It is just visually hidden
+            but remains readable by screen readers
+        </p>
+        <button class="button button--header" style="margin-right: 8px;">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-body">Menu</span>
         </button>
-        <button class="button button--small" disabled>
-            <svg class="button__icon icon icon--small">
+        <button class="button button--header" disabled>
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
             <span class="button__text font-body">Disabled</span>
         </button>
         <ReferenceCode>
-            &lt;button class="button button--small">&lt;svg class="button__icon
-            icon icon--small">&lt;use
+            &lt;button class="button button--header">&lt;svg class="button__icon
+            icon" aria-hidden="true">&lt;use
             xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
             font-body">Menu&lt;/span>&lt;/button>
         </ReferenceCode>
@@ -99,43 +105,22 @@
             screens or a large percentage on larger screens
         </p>
         <button class="button button--wide" style="margin-right: 8px;">
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#create"></use>
             </svg>
             <span class="button__text font-title">Create New Session</span>
         </button>
         <button class="button button--wide" disabled>
-            <svg class="button__icon icon">
+            <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#create"></use>
             </svg>
             <span class="button__text font-title">Create New Session</span>
         </button>
         <ReferenceCode>
             &lt;button class="button button--wide">&lt;svg class="button__icon
-            icon">&lt;use xlink:href="#create">&lt;/use>&lt;/svg>&lt;span
-            class="button__text font-title">Create New
-            Session&lt;/span>&lt;/button>
-        </ReferenceCode>
-    </ReferenceSection>
-
-    <ReferenceSection heading="Round Button">
-        <p>
-            Round buttons are only used on smaller screens when there is not
-            enough space to fit text with the icon.
-        </p>
-        <button class="button button--round" style="margin-right: 8px;">
-            <svg class="button__icon icon">
-                <use xlink:href="#chat"></use>
-            </svg>
-        </button>
-        <button class="button button--round" disabled>
-            <svg class="button__icon icon">
-                <use xlink:href="#chat"></use>
-            </svg>
-        </button>
-        <ReferenceCode>
-            &lt;button class="button button--round">&lt;svg class="button__icon
-            icon">&lt;use xlink:href="#chat">&lt;/use>&lt;/svg>&lt;/button>
+            icon" aria-hidden="true">&lt;use
+            xlink:href="#create">&lt;/use>&lt;/svg>&lt;span class="button__text
+            font-title">Create New Session&lt;/span>&lt;/button>
         </ReferenceCode>
     </ReferenceSection>
 
@@ -146,20 +131,20 @@
             font size
         </p>
         <button class="button button--square" style="margin-right: 8px;">
-            <svg class="button__icon icon icon--huge">
+            <svg class="button__icon icon icon--huge" aria-hidden="true">
                 <use xlink:href="#join"></use>
             </svg>
             <span class="button__text font-body">Join Session</span>
         </button>
         <button class="button button--square" disabled>
-            <svg class="button__icon icon icon--huge">
+            <svg class="button__icon icon icon--huge" aria-hidden="true">
                 <use xlink:href="#join"></use>
             </svg>
             <span class="button__text font-body">Join Session</span>
         </button>
         <ReferenceCode>
             &lt;button class="button button--square">&lt;svg class="button__icon
-            icon icon--huge">&lt;use
+            icon icon--huge" aria-hidden="true">&lt;use
             xlink:href="#join">&lt;/use>&lt;/svg>&lt;span class="button__text
             font-body">Join Session&lt;/span>&lt;/button>
         </ReferenceCode>
