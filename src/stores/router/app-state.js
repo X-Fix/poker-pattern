@@ -12,6 +12,7 @@ const FOOTER_STATE_NAME = '/organisms/footer';
 const CHOOSE_FORM_STATE_NAME = '/organisms/choose-form';
 const CREATE_SESSION_FORM_STATE_NAME = '/organisms/create-session-form';
 const JOIN_SESSION_FORM_STATE_NAME = '/organisms/join-session-form';
+const MENU_STATE_NAME = '/organisms/menu';
 const HOME_TRANSITION_NAME = 'home';
 const ATOMS_TRANSITION_NAME = 'atoms';
 const ICONS_TRANSITION_NAME = 'icons';
@@ -26,6 +27,7 @@ const FOOTER_TRANSITION_NAME = 'footer';
 const CHOOSE_FORM_TRANSITION_NAME = 'choose-form';
 const CREATE_SESSION_FORM_TRANSITION_NAME = 'create-session-form';
 const JOIN_SESSION_FORM_TRANSITION_NAME = 'join-session-form';
+const MENU_TRANSITION_NAME = 'menu';
 
 const stateMachineDefinition = {
     initialStateName: HOME_STATE_NAME,
@@ -334,6 +336,13 @@ const stateMachineDefinition = {
                 description: 'The form for joining an existing session',
                 transitionName: JOIN_SESSION_FORM_TRANSITION_NAME,
             },
+            {
+                icon: 'component',
+                title: 'Menu',
+                description:
+                    'The drop-down menu toggled by the header menu button',
+                transitionName: MENU_TRANSITION_NAME,
+            },
         ],
         transitions: {
             [HOME_TRANSITION_NAME]: {
@@ -376,6 +385,12 @@ const stateMachineDefinition = {
                 targetState: JOIN_SESSION_FORM_STATE_NAME,
                 action() {
                     console.log('Opening Join Session Form');
+                },
+            },
+            [MENU_TRANSITION_NAME]: {
+                targetState: MENU_STATE_NAME,
+                action() {
+                    console.log('Opening Menu');
                 },
             },
         },
@@ -537,6 +552,37 @@ const stateMachineDefinition = {
         type: 'component',
     },
     [JOIN_SESSION_FORM_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Organisms',
+                transitionName: ORGANISMS_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [ORGANISMS_TRANSITION_NAME]: {
+                targetState: ORGANISMS_STATE_NAME,
+                action() {
+                    console.log('Going back to Organisms');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
+    },
+    [MENU_STATE_NAME]: {
         options: [
             {
                 icon: 'folder',
