@@ -85,6 +85,13 @@ describe('Route navigation', () => {
                 .should('exist');
         });
         cy.go('back');
+        cy.findByText('Chat Panel').click();
+        cy.get('article').within(() => {
+            cy.get('h1')
+                .findByText('Chat Panel')
+                .should('exist');
+        });
+        cy.go('back');
         cy.findByText('< Back').click();
     });
 

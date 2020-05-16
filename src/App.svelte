@@ -19,6 +19,7 @@
     import CreateSessionForm from './03-organisms/CreateSessionFormReference.svelte';
     import JoinSessionForm from './03-organisms/JoinSessionFormReference.svelte';
     import Menu from './03-organisms/MenuReference.svelte';
+    import ChatPanel from './03-organisms/ChatPanelReference.svelte';
 
     const referenceSheets = {
         '/atoms/icons': Icons,
@@ -32,6 +33,7 @@
         '/organisms/create-session-form': CreateSessionForm,
         '/organisms/join-session-form': JoinSessionForm,
         '/organisms/menu': Menu,
+        '/organisms/chat-panel': ChatPanel,
     };
 
     let currentState;

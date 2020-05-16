@@ -13,6 +13,8 @@ const CHOOSE_FORM_STATE_NAME = '/organisms/choose-form';
 const CREATE_SESSION_FORM_STATE_NAME = '/organisms/create-session-form';
 const JOIN_SESSION_FORM_STATE_NAME = '/organisms/join-session-form';
 const MENU_STATE_NAME = '/organisms/menu';
+const CHAT_PANEL_STATE_NAME = '/organisms/chat-panel';
+
 const HOME_TRANSITION_NAME = 'home';
 const ATOMS_TRANSITION_NAME = 'atoms';
 const ICONS_TRANSITION_NAME = 'icons';
@@ -28,6 +30,7 @@ const CHOOSE_FORM_TRANSITION_NAME = 'choose-form';
 const CREATE_SESSION_FORM_TRANSITION_NAME = 'create-session-form';
 const JOIN_SESSION_FORM_TRANSITION_NAME = 'join-session-form';
 const MENU_TRANSITION_NAME = 'menu';
+const CHAT_PANEL_TRANSITION_NAME = 'chat-panel';
 
 const stateMachineDefinition = {
     initialStateName: HOME_STATE_NAME,
@@ -343,6 +346,13 @@ const stateMachineDefinition = {
                     'The drop-down menu toggled by the header menu button',
                 transitionName: MENU_TRANSITION_NAME,
             },
+            {
+                icon: 'component',
+                title: 'Chat Panel',
+                description:
+                    'The side-sliding chat panel toggled by the header chat button',
+                transitionName: CHAT_PANEL_TRANSITION_NAME,
+            },
         ],
         transitions: {
             [HOME_TRANSITION_NAME]: {
@@ -391,6 +401,12 @@ const stateMachineDefinition = {
                 targetState: MENU_STATE_NAME,
                 action() {
                     console.log('Opening Menu');
+                },
+            },
+            [CHAT_PANEL_TRANSITION_NAME]: {
+                targetState: CHAT_PANEL_STATE_NAME,
+                action() {
+                    console.log('Opening Chat Panel');
                 },
             },
         },
@@ -583,6 +599,37 @@ const stateMachineDefinition = {
         type: 'component',
     },
     [MENU_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Organisms',
+                transitionName: ORGANISMS_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [ORGANISMS_TRANSITION_NAME]: {
+                targetState: ORGANISMS_STATE_NAME,
+                action() {
+                    console.log('Going back to Organisms');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
+    },
+    [CHAT_PANEL_STATE_NAME]: {
         options: [
             {
                 icon: 'folder',
