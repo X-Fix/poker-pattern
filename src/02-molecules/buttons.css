@@ -79,11 +79,6 @@
     color: $color-blue-800;
 }
 
-/* Bit of a hack for the only use-case for a sceondary button... */
-.button--secondary .icon {
-    transform: scaleX(-1);
-}
-
 /* Dark */
 
 .button--dark {
