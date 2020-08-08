@@ -71,7 +71,7 @@
     {#if isSnippetVisible}
         <div class="snippet">
             <ReferenceCode>
-                &lt;svg class="icon">&lt;use xlink:href="#{iconName}">&lt;/use>&lt;/svg>
+                &lt;svg class="icon"&gt;&lt;use xlink:href="#{iconName}"&gt;&lt;/use&gt;&lt;/svg&gt;
             </ReferenceCode>
         </div>
     {/if}
