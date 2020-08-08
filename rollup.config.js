@@ -31,7 +31,7 @@ export default {
             extensions: ['.css'],
             extract: true,
             plugins: [
-                // User require statements to avoid the following invalid error:
+                // Use require statements to avoid the following invalid error:
                 // "You did not set any plugins, parser, or stringifier. Right now, PostCSS does
                 // nothing. Pick plugins for your case on https://www.postcss.parts/ and use them in
                 // postcss.config.js."
