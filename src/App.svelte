@@ -1,12 +1,10 @@
 <script>
     // How to router
     // https://medium.com/swlh/simple-svelte-3-app-with-router-44fe83c833b6
-    import { onMount } from 'svelte';
-
     import './main.css';
     import './01-atoms/icons';
 
-    import { transition, getStore, syncState } from './stores/router';
+    import { getStore, syncState } from './stores/router';
     import Navigation from './components/Navigation.svelte';
     import Icons from './01-atoms/IconsReference.svelte';
     import Buttons from './02-molecules/ButtonsReference.svelte';
