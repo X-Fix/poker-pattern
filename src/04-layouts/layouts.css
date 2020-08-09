@@ -3,7 +3,8 @@
     padding-top: 4rem;
 }
 
-.create-session {
+.create-session,
+.join-session {
     display: flex;
     align-items: center;
 }

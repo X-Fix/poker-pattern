@@ -22,6 +22,7 @@
     import ChatPanel from './03-organisms/ChatPanelReference.svelte';
     import HomePage from './04-layouts/HomePage.svelte';
     import CreateSessionPage from './04-layouts/CreateSessionPage.svelte';
+    import JoinSessionPage from './04-layouts/JoinSessionPage.svelte';
 
     const referenceSheets = {
         '/atoms/icons': Icons,
@@ -39,6 +40,7 @@
         '/organisms/chat-panel': ChatPanel,
         '/layouts/home-page': HomePage,
         '/layouts/create-session-page': CreateSessionPage,
+        '/layouts/join-session-page': JoinSessionPage,
     };
 
     let currentState;
