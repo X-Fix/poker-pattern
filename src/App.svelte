@@ -1,12 +1,10 @@
 <script>
     // How to router
     // https://medium.com/swlh/simple-svelte-3-app-with-router-44fe83c833b6
-    import { onMount } from 'svelte';
-
     import './main.css';
     import './01-atoms/icons';
 
-    import { transition, getStore, syncState } from './stores/router';
+    import { getStore, syncState } from './stores/router';
     import Navigation from './components/Navigation.svelte';
     import Icons from './01-atoms/IconsReference.svelte';
     import Buttons from './02-molecules/ButtonsReference.svelte';
@@ -19,12 +17,15 @@
     import CreateSessionForm from './03-organisms/CreateSessionFormReference.svelte';
     import JoinSessionForm from './03-organisms/JoinSessionFormReference.svelte';
     import Menu from './03-organisms/MenuReference.svelte';
+    import ChatPanel from './03-organisms/ChatPanelReference.svelte';
+    import ChatBubble from './02-molecules/ChatBubbleReference.svelte';
 
     const referenceSheets = {
         '/atoms/icons': Icons,
         '/molecules/buttons': Buttons,
         '/molecules/inputs': Inputs,
         '/molecules/poker-cards': PokerCards,
+        '/molecules/chat-bubble': ChatBubble,
         '/organisms/participants-list': ParticipantsList,
         '/organisms/header': Header,
         '/organisms/footer': Footer,
@@ -32,6 +33,7 @@
         '/organisms/create-session-form': CreateSessionForm,
         '/organisms/join-session-form': JoinSessionForm,
         '/organisms/menu': Menu,
+        '/organisms/chat-panel': ChatPanel,
     };
 
     let currentState;

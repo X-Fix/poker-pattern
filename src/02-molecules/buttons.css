@@ -8,7 +8,7 @@
     cursor: pointer;
     display: inline-flex;
     height: 3rem;
-    padding: 0 16px;
+    padding: 0 $spacing-md;
     justify-content: center;
 }
 
@@ -77,11 +77,6 @@
 .button--secondary {
     background-color: $color-neutral-0;
     color: $color-blue-800;
-}
-
-/* Bit of a hack for the only use-case for a sceondary button... */
-.button--secondary .icon {
-    transform: scaleX(-1);
 }
 
 /* Dark */

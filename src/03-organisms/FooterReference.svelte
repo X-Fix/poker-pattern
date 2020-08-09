@@ -72,7 +72,7 @@
             </span>
             <span class="footer__actions">
                 <button class="button button--secondary">
-                    <svg class="button__icon icon" aria-hidden="true">
+                    <svg class="button__icon icon icon--reverse" aria-hidden="true">
                         <use xlink:href="#redo"></use>
                     </svg>
                     <span class="button__text font-title">Redo Vote</span>
@@ -105,7 +105,7 @@
             </span>
             <span class="footer__actions">
                 <button class="button button--secondary">
-                    <svg class="button__icon icon" aria-hidden="true">
+                    <svg class="button__icon icon icon--reverse" aria-hidden="true">
                         <use xlink:href="#redo"></use>
                     </svg>
                     <span class="button__text font-title">Redo Vote</span>

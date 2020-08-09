@@ -5,6 +5,7 @@ const MOLECULES_STATE_NAME = '/molecules';
 const BUTTONS_STATE_NAME = '/molecules/buttons';
 const INPUTS_STATE_NAME = '/molecules/inputs';
 const POKER_CARDS_STATE_NAME = '/molecules/poker-cards';
+const CHAT_BUBBLE_STATE_NAME = '/molecules/chat-bubble';
 const ORGANISMS_STATE_NAME = '/organisms';
 const PARTICIPANTS_LIST_STATE_NAME = '/organisms/participants-list';
 const HEADER_STATE_NAME = '/organisms/header';
@@ -13,6 +14,7 @@ const CHOOSE_FORM_STATE_NAME = '/organisms/choose-form';
 const CREATE_SESSION_FORM_STATE_NAME = '/organisms/create-session-form';
 const JOIN_SESSION_FORM_STATE_NAME = '/organisms/join-session-form';
 const MENU_STATE_NAME = '/organisms/menu';
+const CHAT_PANEL_STATE_NAME = '/organisms/chat-panel';
 const HOME_TRANSITION_NAME = 'home';
 const ATOMS_TRANSITION_NAME = 'atoms';
 const ICONS_TRANSITION_NAME = 'icons';
@@ -20,6 +22,7 @@ const MOLECULES_TRANSITION_NAME = 'molecules';
 const BUTTONS_TRANSITION_NAME = 'buttons';
 const INPUTS_TRANSITION_NAME = 'inputs';
 const POKER_CARDS_TRANSITION_NAME = 'poker-cards';
+const CHAT_BUBBLE_TRANSITION_NAME = 'chat-bubble';
 const ORGANISMS_TRANSITION_NAME = 'organisms';
 const PARTICIPANTS_LIST_TRANSITION_NAME = 'participants-list';
 const HEADER_TRANSITION_NAME = 'header';
@@ -28,6 +31,7 @@ const CHOOSE_FORM_TRANSITION_NAME = 'choose-form';
 const CREATE_SESSION_FORM_TRANSITION_NAME = 'create-session-form';
 const JOIN_SESSION_FORM_TRANSITION_NAME = 'join-session-form';
 const MENU_TRANSITION_NAME = 'menu';
+const CHAT_PANEL_TRANSITION_NAME = 'chat-panel';
 
 const stateMachineDefinition = {
     initialStateName: HOME_STATE_NAME,
@@ -168,6 +172,12 @@ const stateMachineDefinition = {
                 description: 'The poker cards used during voting',
                 transitionName: POKER_CARDS_TRANSITION_NAME,
             },
+            {
+                icon: 'component',
+                title: 'Chat Bubbles',
+                description: 'The chat bubbles seen in the chat',
+                transitionName: CHAT_BUBBLE_TRANSITION_NAME,
+            },
         ],
         transitions: {
             [HOME_TRANSITION_NAME]: {
@@ -192,6 +202,12 @@ const stateMachineDefinition = {
                 targetState: POKER_CARDS_STATE_NAME,
                 action() {
                     console.log('Opening Poker Cards');
+                },
+            },
+            [CHAT_BUBBLE_TRANSITION_NAME]: {
+                targetState: CHAT_BUBBLE_STATE_NAME,
+                action() {
+                    console.log('Opening Chat Bubbles');
                 },
             },
         },
@@ -290,6 +306,37 @@ const stateMachineDefinition = {
         },
         type: 'component',
     },
+    [CHAT_BUBBLE_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Molecules',
+                transitionName: MOLECULES_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [MOLECULES_TRANSITION_NAME]: {
+                targetState: MOLECULES_STATE_NAME,
+                action() {
+                    console.log('Going back to Molecules');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
+    },
     [ORGANISMS_STATE_NAME]: {
         options: [
             {
@@ -343,6 +390,13 @@ const stateMachineDefinition = {
                     'The drop-down menu toggled by the header menu button',
                 transitionName: MENU_TRANSITION_NAME,
             },
+            {
+                icon: 'component',
+                title: 'Chat Panel',
+                description:
+                    'The chat panel which allows participants to communicate',
+                transitionName: CHAT_PANEL_TRANSITION_NAME,
+            },
         ],
         transitions: {
             [HOME_TRANSITION_NAME]: {
@@ -391,6 +445,12 @@ const stateMachineDefinition = {
                 targetState: MENU_STATE_NAME,
                 action() {
                     console.log('Opening Menu');
+                },
+            },
+            [CHAT_PANEL_TRANSITION_NAME]: {
+                targetState: CHAT_PANEL_STATE_NAME,
+                action() {
+                    console.log('Opening Chat Panel');
                 },
             },
         },
@@ -583,6 +643,37 @@ const stateMachineDefinition = {
         type: 'component',
     },
     [MENU_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Organisms',
+                transitionName: ORGANISMS_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [ORGANISMS_TRANSITION_NAME]: {
+                targetState: ORGANISMS_STATE_NAME,
+                action() {
+                    console.log('Going back to Organisms');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
+    },
+    [CHAT_PANEL_STATE_NAME]: {
         options: [
             {
                 icon: 'folder',
