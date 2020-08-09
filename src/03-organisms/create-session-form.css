@@ -1,6 +1,7 @@
 .create-session-form {
     box-sizing: border-box;
     height: 580px;
+    margin: 0 auto;
     padding: $spacing-md;
     width: 360px;
 }
