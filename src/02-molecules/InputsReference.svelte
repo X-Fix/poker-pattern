@@ -27,9 +27,9 @@
                 placeholder="Eg. ‘John Johnson’" />
         </label>
         <ReferenceCode>
-            &lt;label class="text-input">&lt;p class="text-input__label">Your
-            Name&lt;/p>&lt;input class="text-input__text" type="text"
-            placeholder="Eg. ‘John Johnson’" />&lt;/label>
+            &lt;label class="text-input"&gt;&lt;p class="text-input__label"&gt;Your
+            Name&lt;/p&gt;&lt;input class="text-input__text" type="text"
+            placeholder="Eg. ‘John Johnson’" /&gt;&lt;/label&gt;
         </ReferenceCode>
     </ReferenceSection>
 
@@ -55,10 +55,10 @@
             <p class="radio-input__label">Click me</p>
         </label>
         <ReferenceCode>
-            &lt;label class="radio-input">&lt;input type="radio" name="example"
-            />&lt;span class="radio-input__radio"
-            aria-hidden="true">&lt;/span>&lt;p class="radio-input__label">Click
-            me&lt;/p>&lt;/label>
+            &lt;label class="radio-input"&gt;&lt;input type="radio" name="example"
+            /&gt;&lt;span class="radio-input__radio"
+            aria-hidden="true"&gt;&lt;/span&gt;&lt;p class="radio-input__label"&gt;Click
+            me&lt;/p&gt;&lt;/label&gt;
         </ReferenceCode>
     </ReferenceSection>
 
@@ -84,10 +84,10 @@
             <span class="switch-input__switch" aria-hidden="true"></span>
         </label>
         <ReferenceCode>
-            &lt;label class="switch-input">&lt;p
-            class="switch-input__label">Include me&lt;/p>&lt;input
-            type="checkbox" />&lt;span class="switch-input__switch"
-            aria-hidden="true">&lt;/span>&lt;/label>
+            &lt;label class="switch-input"&gt;&lt;p
+            class="switch-input__label"&gt;Include me&lt;/p&gt;&lt;input
+            type="checkbox" /&gt;&lt;span class="switch-input__switch"
+            aria-hidden="true"&gt;&lt;/span&gt;&lt;/label&gt;
         </ReferenceCode>
     </ReferenceSection>
 </ReferenceSheet>

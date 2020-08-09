@@ -60,11 +60,11 @@
 }
 
 .participant__action .icon {
-    filter: drop-shadow(2px 3px 1px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow($shadow-button-primary);
 }
 
 .participant__action:not(:active):hover .icon {
-    filter: drop-shadow(2px 3px 1px rgba(0, 0, 0, 0.375));
+    filter: drop-shadow($shadow-button-tertiary);
 }
 
 .participant__score {

@@ -58,14 +58,14 @@
             </p>
         </label>
         <ReferenceCode>
-            &lt;label class="poker-card">&lt;input type="radio"
-            name="poker-cards" />&lt;p class="poker-card__card">&lt;span
-            class="poker-card__labels">&lt;span
+            &lt;label class="poker-card"&gt;&lt;input type="radio"
+            name="poker-cards" /&gt;&lt;p class="poker-card__card"&gt;&lt;span
+            class="poker-card__labels"&gt;&lt;span
             class="poker-card__top-left-label"
-            aria-hidden="true">100&lt;/span>&lt;span
-            class="poker-card__center-label">100&lt;/span>&lt;span
+            aria-hidden="true"&gt;100&lt;/span&gt;&lt;span
+            class="poker-card__center-label"&gt;100&lt;/span&gt;&lt;span
             class="poker-card__bottom-right-label"
-            aria-hidden="true">100&lt;/span>&lt;/span>&lt;/p>&lt;/label>
+            aria-hidden="true"&gt;100&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/label&gt;
         </ReferenceCode>
     </ReferenceSection>
 </ReferenceSheet>
