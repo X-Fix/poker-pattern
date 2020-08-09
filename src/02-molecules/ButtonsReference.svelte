@@ -37,10 +37,10 @@
             <span class="button__text font-title">Disabled</span>
         </button>
         <ReferenceCode>
-            &lt;button class="button">&lt;svg class="button__icon icon"
-            aria-hidden="true">&lt;use
-            xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
-            font-title">Menu&lt;/span>&lt;/button>
+            &lt;button class="button"&gt;&lt;svg class="button__icon icon"
+            aria-hidden="true"&gt;&lt;use
+            xlink:href="#menu"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class="button__text
+            font-title"&gt;Menu&lt;/span&gt;&lt;/button&gt;
         </ReferenceCode>
     </ReferenceSection>
 
@@ -62,10 +62,10 @@
             <span class="button__text font-title">Disabled</span>
         </button>
         <ReferenceCode>
-            &lt;button class="button button--secondary">&lt;svg
-            class="button__icon icon" aria-hidden="true">&lt;use
-            xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
-            font-title">Menu&lt;/span>&lt;/button>
+            &lt;button class="button button--secondary"&gt;&lt;svg
+            class="button__icon icon" aria-hidden="true"&gt;&lt;use
+            xlink:href="#menu"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class="button__text
+            font-title"&gt;Menu&lt;/span&gt;&lt;/button&gt;
         </ReferenceCode>
     </ReferenceSection>
 
@@ -82,10 +82,10 @@
             <span class="button__text font-title">Menu</span>
         </button>
         <ReferenceCode>
-            &lt;button class="button button--dark">&lt;svg class="button__icon
-            icon" aria-hidden="true">&lt;use
-            xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
-            font-title">Menu&lt;/span>&lt;/button>
+            &lt;button class="button button--dark"&gt;&lt;svg class="button__icon
+            icon" aria-hidden="true"&gt;&lt;use
+            xlink:href="#menu"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class="button__text
+            font-title"&gt;Menu&lt;/span&gt;&lt;/button&gt;
         </ReferenceCode>
     </ReferenceSection>
 
@@ -112,10 +112,10 @@
             <span class="button__text font-body">Disabled</span>
         </button>
         <ReferenceCode>
-            &lt;button class="button button--header">&lt;svg class="button__icon
-            icon" aria-hidden="true">&lt;use
-            xlink:href="#menu">&lt;/use>&lt;/svg>&lt;span class="button__text
-            font-body">Menu&lt;/span>&lt;/button>
+            &lt;button class="button button--header"&gt;&lt;svg class="button__icon
+            icon" aria-hidden="true"&gt;&lt;use
+            xlink:href="#menu"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class="button__text
+            font-body"&gt;Menu&lt;/span&gt;&lt;/button&gt;
         </ReferenceCode>
     </ReferenceSection>
 
@@ -137,10 +137,10 @@
             <span class="button__text font-title">Create New Session</span>
         </button>
         <ReferenceCode>
-            &lt;button class="button button--wide">&lt;svg class="button__icon
-            icon" aria-hidden="true">&lt;use
-            xlink:href="#create">&lt;/use>&lt;/svg>&lt;span class="button__text
-            font-title">Create New Session&lt;/span>&lt;/button>
+            &lt;button class="button button--wide"&gt;&lt;svg class="button__icon
+            icon" aria-hidden="true"&gt;&lt;use
+            xlink:href="#create"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class="button__text
+            font-title"&gt;Create New Session&lt;/span&gt;&lt;/button&gt;
         </ReferenceCode>
     </ReferenceSection>
 
@@ -163,10 +163,10 @@
             <span class="button__text font-body">Join Session</span>
         </button>
         <ReferenceCode>
-            &lt;button class="button button--square">&lt;svg class="button__icon
-            icon icon--huge" aria-hidden="true">&lt;use
-            xlink:href="#join">&lt;/use>&lt;/svg>&lt;span class="button__text
-            font-body">Join Session&lt;/span>&lt;/button>
+            &lt;button class="button button--square"&gt;&lt;svg class="button__icon
+            icon icon--huge" aria-hidden="true"&gt;&lt;use
+            xlink:href="#join"&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span class="button__text
+            font-body"&gt;Join Session&lt;/span&gt;&lt;/button&gt;
         </ReferenceCode>
     </ReferenceSection>
 </ReferenceSheet>
