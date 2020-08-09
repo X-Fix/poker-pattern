@@ -3,7 +3,7 @@
     background-color: $color-neutral-0;
     box-sizing: border-box;
     bottom: 0;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: $shadow-footer;
     display: flex;
     height: 64px;
     justify-content: center;

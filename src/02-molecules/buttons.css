@@ -40,11 +40,11 @@
 }
 
 .button:not(:disabled) > .button__icon {
-    filter: drop-shadow(2px 3px 1px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow($shadow-button-primary);
 }
 
 .button:not(:disabled) > .button__text {
-    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.35);
+    text-shadow: $shadow-button-primary;
 }
 
 /* Header */
@@ -77,6 +77,14 @@
 .button--secondary {
     background-color: $color-neutral-0;
     color: $color-blue-800;
+}
+
+.button--secondary:not(:disabled) > .button__icon {
+    filter: drop-shadow($shadow-button-secondary);
+}
+
+.button--secondary:not(:disabled) > .button__text {
+    text-shadow: $shadow-button-secondary;
 }
 
 /* Dark */

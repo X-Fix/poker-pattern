@@ -1,13 +1,7 @@
-/* There is overlap between the chat-bubble shadow and the triangle's shadow, causing a darker
- * shadow where they overlap. To avoid this we make an exception in this instance, and use a solid
- * colour for the box-shadow. The value below is the solid representation of rgba(0, 0, 0, 0.25)
- */
-$chat-bubble-shadow: #bfbfbf;
-
 .chat-bubble {
     background-color: $color-neutral-100;
     border-radius: 8px;
-    box-shadow: 1px 1px 0px $chat-bubble-shadow;
+    box-shadow: 1px 1px 0px $shadow-chat-bubble;
     font-size: $font-size-body;
     margin: 0 $spacing-lg $spacing-sm $spacing-md;
     padding: $spacing-sm;
@@ -30,7 +24,7 @@ $chat-bubble-shadow: #bfbfbf;
 }
 
 .chat-bubble:after {
-    border-bottom: 1px solid $chat-bubble-shadow;
+    border-bottom: 1px solid $shadow-chat-bubble;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
     bottom: -1px;
