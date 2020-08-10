@@ -32,6 +32,8 @@
     box-sizing: border-box;
     display: flex;
     height: 100%;
+    /* Don't leave the position:absolute middle label behind when scrolling */
+    position: relative;
 }
 
 .poker-card__top-left-label,
