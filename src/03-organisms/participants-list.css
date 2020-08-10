@@ -1,6 +1,8 @@
 .participants-list {
     list-style: none;
     margin: 0;
+    /* Overflow won't kick in unless it is given a height (like in the context of being a part of the Lobby page) */
+    overflow-y: scroll;
     padding: 0;
 }
 
