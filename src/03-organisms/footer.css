@@ -10,11 +10,11 @@
     padding: 0 $spacing-md;
     position: fixed;
 
-    /* Center a position: fixed element */
+    /* Ensure this fixed element remains centered on screens wider than its max-width */
     left: 50%;
     transform: translateX(-50%);
 
-    /* Span the scren width until a certain point */
+    /* Span the screen width until a certain point */
     width: 100%;
     max-width: 1024px;
 }
@@ -24,7 +24,7 @@
     flex-direction: reverse;
 }
 
-/* If there is a CTA... */
+/* If there is a CTA sibling, hide it visibly (but keep it visible to screen readers) */
 .footer__cta + .footer__status-text {
     opacity: 0;
     position: absolute;
