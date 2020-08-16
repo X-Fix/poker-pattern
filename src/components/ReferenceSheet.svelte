@@ -4,7 +4,8 @@
 
 <style>
     article {
-        margin: 16px 32px;
+        background-color: white;
+        padding: 16px 32px;
     }
 
     h1 {
