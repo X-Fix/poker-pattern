@@ -17,7 +17,7 @@ body {
     align-items: center;
     background-color: $color-neutral-50;
     display: flex;
-    /* The only 'main's that don't have a footer */
+    /* The only '.main's that don't have a footer */
     padding-bottom: 0;
 }
 
@@ -55,51 +55,51 @@ body {
     margin: 0 1rem 1rem 0;
 }
 
-.lobby {
+.session-panel {
     background-color: $color-neutral-0;
     min-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-    .lobby {
+    .session-panel {
         min-width: 304px;
     }
 }
 
 @media screen and (min-width: 834px) {
-    .lobby {
+    .session-panel {
         min-width: 360px;
     }
 }
 
-.lobby__participants-list {
+.lobby + .participants-list {
     height: calc(100vh - 15rem - 8rem);
 }
 
-.session-details {
+.lobby {
     border-bottom: 1px solid $color-neutral-200;
     padding: $spacing-md;
 }
 
-.session-details__name {
+.lobby__title {
     font-weight: normal;
     margin: $spacing-sm 0;
 }
 
-.session-details__description {
+.lobby__description {
     margin: 0 0 $spacing-md;
 }
 
-.session-details__id {
+.lobby__id {
     display: flex;
     margin: 0;
 }
 
-dl.session-details__id > dd {
+dl.lobby__id > dd {
     color: $color-blue-800;
 }
 
-.session-details__copy {
+.lobby__copy-link {
     align-items: center;
     color: $color-blue-800;
     cursor: pointer;
@@ -114,14 +114,14 @@ dl.session-details__id > dd {
     padding: 0;
 }
 
-.session-details__copy-text {
+.lobby__copy-link-text {
     text-shadow: $shadow-button-secondary;
 }
 
-.session-details__copy-icon {
+.lobby__copy-link-icon {
     filter: drop-shadow($shadow-button-secondary);
 }
 
-.session-details__participants {
+.lobby__participants-count {
     margin: 0 0 $spacing-xsm;
 }

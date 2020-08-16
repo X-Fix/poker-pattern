@@ -210,23 +210,23 @@
             </p>
         </label>
     </section>
-    <section class="lobby">
-        <div class="session-details">
-            <h2 class="session-details__name font-headline">Fuzzy Wumpus</h2>
-            <p class="session-details__description">Share the Session ID below with participants you want in this session</p>
-            <dl class="session-details__id font-title">
+    <section class="session-panel">
+        <div class="lobby">
+            <h2 class="lobby__title font-headline">Fuzzy Wumpus</h2>
+            <p class="lobby__description">Share the Session ID below with participants you want in this session</p>
+            <dl class="lobby__id font-title">
                 <dt>Session ID:</dt>
                 <dd>27y2k</dd>
             </dl>
-            <button class="session-details__copy">
-                <span class="session-details__copy-text font-title">Copy Session Link</span>
-                <svg class="session-details__copy-icon icon" aria-hidden="true">
+            <button class="lobby__copy-link">
+                <span class="lobby__copy-link-text font-title">Copy Session Link</span>
+                <svg class="lobby__copy-link-icon icon" aria-hidden="true">
                     <use xlink:href="#copy"></use>
                 </svg>
             </button>
-            <p class="session-details__participants font-title">Participants (5)</p>
+            <p class="lobby__participants-count font-title">Participants (5)</p>
         </div>
-        <ul class="lobby__participants-list participants-list">
+        <ul class="participants-list">
             <li class="participant participant--me participant--owner">
                 <span class="participant__name font-body">Darisha</span>
             </li>
