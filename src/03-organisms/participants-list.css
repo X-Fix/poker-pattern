@@ -8,7 +8,7 @@
 
 .participant {
     align-items: center;
-    border-bottom: 1px solid $color-neutral-200;
+    border-bottom: 0.0625rem solid $color-neutral-200;
     box-sizing: border-box;
     display: flex;
     height: 4.5rem;

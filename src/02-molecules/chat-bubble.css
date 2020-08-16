@@ -1,7 +1,7 @@
 .chat-bubble {
     background-color: $color-neutral-100;
-    border-radius: 8px;
-    box-shadow: 1px 1px 0px $shadow-chat-bubble;
+    border-radius: 0.5rem;
+    box-shadow: 0.0625rem 0.0625rem 0 $shadow-chat-bubble;
     font-size: $font-size-body;
     margin: 0 $spacing-lg $spacing-sm $spacing-md;
     padding: $spacing-sm;
@@ -10,29 +10,29 @@
 
 .chat-bubble:before {
     border-style: solid;
-    border-top: 0px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid $color-neutral-100;
-    border-left: 8px solid transparent;
+    border-top: 0 solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid $color-neutral-100;
+    border-left: 0.5rem solid transparent;
     bottom: 0;
     content: '';
     height: 0;
-    left: -8px;
+    left: -0.5rem;
     position: absolute;
     width: 0;
     z-index: 1;
 }
 
 .chat-bubble:after {
-    border-bottom: 1px solid $shadow-chat-bubble;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    bottom: -1px;
+    border-bottom: 0.0625rem solid $shadow-chat-bubble;
+    border-left: 0.0625rem solid transparent;
+    border-right: 0.0625rem solid transparent;
+    bottom: -0.0625rem;
     content: '';
-    height: 0px;
-    left: -8px;
+    height: 0;
+    left: -0.5rem;
     position: absolute;
-    width: 16px;
+    width: 1rem;
 }
 
 .chat-bubble--self {
@@ -41,14 +41,14 @@
 }
 
 .chat-bubble--self:before {
-    border-bottom: 8px solid $color-blue-50;
+    border-bottom: 0.5rem solid $color-blue-50;
     left: auto;
-    right: -8px;
+    right: -0.5rem;
 }
 
 .chat-bubble--self:after {
     left: auto;
-    right: -9px;
+    right: -0.5625rem;
 }
 
 .chat-bubble__participant {

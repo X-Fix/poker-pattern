@@ -24,7 +24,7 @@
     </p>
     <ReferenceSection heading="Default Button (eg. 'Menu' button)">
         <p>Default buttons use a title-size font and a large icon</p>
-        <button class="button" style="margin-right: 8px;">
+        <button class="button" style="margin-right: 0.5rem;">
             <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
@@ -49,7 +49,7 @@
             Secondary buttons get a `--secondary` modifier. This applies a color
             and background-color adjustment
         </p>
-        <button class="button button--secondary" style="margin-right: 8px;">
+        <button class="button button--secondary" style="margin-right: 0.5rem;">
             <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
@@ -99,7 +99,7 @@
             Even when reduced, the text still exists. It is just visually hidden
             but remains readable by screen readers
         </p>
-        <button class="button button--header" style="margin-right: 8px;">
+        <button class="button button--header" style="margin-right: 0.5rem;">
             <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#menu"></use>
             </svg>
@@ -124,7 +124,7 @@
             Wide buttons tend to span footers, either most of the width on small
             screens or a large percentage on larger screens
         </p>
-        <button class="button button--wide" style="margin-right: 8px;">
+        <button class="button button--wide" style="margin-right: 0.5rem;">
             <svg class="button__icon icon" aria-hidden="true">
                 <use xlink:href="#create"></use>
             </svg>
@@ -150,7 +150,7 @@
             use case. They use the `--huge` modified icon, and the smaller body
             font size
         </p>
-        <button class="button button--square" style="margin-right: 8px;">
+        <button class="button button--square" style="margin-right: 0.5rem;">
             <svg class="button__icon icon icon--huge" aria-hidden="true">
                 <use xlink:href="#join"></use>
             </svg>

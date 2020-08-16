@@ -5,7 +5,7 @@
 <style>
     article {
         background-color: white;
-        padding: 16px 32px;
+        padding: 1rem 2rem;
     }
 
     h1 {

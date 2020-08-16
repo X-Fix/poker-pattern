@@ -19,7 +19,7 @@
             background is transparent but on larger screens the elements are
             placed inside a card
         </p>
-        <div style="height: 600px; background-color: #FAFAFA; padding: 32px;">
+        <div style="height: 37.5rem; background-color: #FAFAFA; padding: 2rem;">
             <form onsubmit="return false;" class="create-session-form">
                 <h2 class="create-session-form__heading font-headline">
                     Create New Session

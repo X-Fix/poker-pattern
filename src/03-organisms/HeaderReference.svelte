@@ -7,7 +7,7 @@
 
 </style>
 
-<div style="height: 60px;"></div>
+<div style="height: 3.75rem;"></div>
 <ReferenceSheet heading="Header">
     <p>
         The main header appears at the top of the page at all times. Before

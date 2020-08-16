@@ -5,7 +5,7 @@
     bottom: 0;
     box-shadow: $shadow-footer;
     display: flex;
-    height: 64px;
+    height: 4rem;
     justify-content: center;
     padding: 0 $spacing-md;
     position: fixed;
@@ -16,7 +16,7 @@
 
     /* Span the screen width until a certain point */
     width: 100%;
-    max-width: 1024px;
+    max-width: 64rem;
 }
 
 .footer__content {
@@ -45,7 +45,7 @@
     width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
     .footer--actions {
         justify-content: space-between;
     }

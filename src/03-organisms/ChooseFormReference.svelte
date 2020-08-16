@@ -19,7 +19,7 @@
             orientation based on the screen size (portrait on smaller screens,
             landscape on larger screens)
         </p>
-        <div style="height: 600px;">
+        <div style="height: 37.5rem;">
             <form onsubmit="return false;" class="choose-form">
                 <button
                     class="choose-form__create-session button button--square">

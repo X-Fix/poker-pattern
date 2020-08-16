@@ -78,7 +78,7 @@
             Switches are designed to span the width of their container so the
             width will always be equivalent to 100%;
         </p>
-        <label class="switch-input" style="width: 324px;">
+        <label class="switch-input" style="width: 20.25rem;">
             <p class="switch-input__label">Include me</p>
             <input type="checkbox" name="example" />
             <span class="switch-input__switch" aria-hidden="true"></span>

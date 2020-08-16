@@ -1,9 +1,9 @@
 .create-session-form {
     box-sizing: border-box;
-    height: 580px;
+    height: 36.25rem;
     margin: 0 auto;
     padding: $spacing-md;
-    width: 360px;
+    width: 22.5rem;
 }
 
 .create-session-form__heading {
@@ -30,7 +30,7 @@
     margin-bottom: 0;
 }
 
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 48rem) {
     .create-session-form {
         background-color: $color-neutral-0;
         box-shadow: $shadow-form;

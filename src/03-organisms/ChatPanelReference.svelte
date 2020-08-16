@@ -16,7 +16,7 @@
         <p>
             By default the chat panel height will be 100vh, and hidden off-screen to the right. This example has inline overrides to demonstrate what it would look like on a small screen (so beware when copy/pasting)
         </p>
-        <div style="border: 1px solid black; height: 600px; width: 360px; position: relative;">
+        <div style="border: 0.0625rem solid black; height: 37.5rem; width: 22.5rem; position: relative;">
             <div class="chat-panel" style="height: 100%; position: static; transform: none; width: 100%">
                 <ul class="chat-panel__messages">
                     <li class="chat-bubble chat-bubble--self">

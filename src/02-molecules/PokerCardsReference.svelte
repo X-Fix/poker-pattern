@@ -41,7 +41,7 @@
                 </span>
             </p>
         </label>
-        <label class="poker-card" style="margin-top: 8px;">
+        <label class="poker-card" style="margin-top: 0.5rem;">
             <input type="radio" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">

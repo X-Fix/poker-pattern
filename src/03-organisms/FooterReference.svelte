@@ -15,7 +15,7 @@
     </p>
     <p>
         The header's spacing adjusts as the screen gets larger, although it
-        never gets wider than the widest intended view-width (1024px)
+        never gets wider than the widest intended view-width (1024px/64rem)
     </p>
 
     <ReferenceSection heading="Default">
@@ -35,7 +35,7 @@
         </footer>
         <footer
             class="footer"
-            style="position: static; transform: none; margin: 16px auto 0;">
+            style="position: static; transform: none; margin: 1rem auto 0;">
             <span class="footer__content">
                 <span class="footer__cta">
                     <button class="button button--wide">
@@ -87,7 +87,7 @@
         </footer>
         <footer
             class="footer footer--actions"
-            style="position: static; transform: none; margin: 16px auto 0;">
+            style="position: static; transform: none; margin: 1rem auto 0;">
             <span class="footer__content">
                 <span class="footer__cta">
                     <button class="button button--wide">

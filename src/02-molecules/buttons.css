@@ -2,7 +2,7 @@
 .button {
     align-items: center;
     border: none;
-    border-radius: 2px;
+    border-radius: 0.125rem;
     background-color: $color-blue-800;
     color: $color-neutral-0;
     cursor: pointer;
@@ -48,7 +48,7 @@
 }
 
 /* Header */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
     .button--header {
         height: 2.5rem;
     }
@@ -59,10 +59,10 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.9375rem) {
     .button--header {
         border-radius: 50%;
-        padding: 8px;
+        padding: $spacing-sm;
     }
 
     .button--header .button__text {
@@ -96,12 +96,12 @@
 /* Wide */
 
 .button--wide {
-    width: 304px;
+    width: 19rem;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 22.5rem) {
     .button--wide {
-        width: 322px;
+        width: 20.5rem;
     }
 }
 
@@ -114,16 +114,16 @@
 /* Square */
 
 .button--square {
-    border-radius: 16px;
+    border-radius: 1rem;
     display: inline;
-    height: 160px;
-    padding: 16px;
-    width: 160px;
+    height: 10rem;
+    padding: $spacing-md;
+    width: 10rem;
 }
 
 .button--square .button__icon {
     display: block;
-    margin: 0 auto 12px;
+    margin: 0 auto 0.75rem;
 }
 
 .button--square .button__text {

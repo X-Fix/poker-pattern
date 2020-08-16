@@ -1,9 +1,9 @@
 .join-session-form {
     box-sizing: border-box;
-    height: 360px;
+    height: 22.5rem;
     margin: 0 auto;
     padding: $spacing-md;
-    width: 360px;
+    width: 22.5rem;
 }
 
 .join-session-form__heading {
@@ -18,7 +18,7 @@
     margin-top: $spacing-md;
 }
 
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 48rem) {
     .join-session-form {
         background-color: $color-neutral-0;
         box-shadow: $shadow-form;

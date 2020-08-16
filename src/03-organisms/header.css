@@ -3,7 +3,7 @@
     box-shadow: $shadow-header;
     box-sizing: border-box;
     font-weight: 400;
-    height: 64px;
+    height: 4rem;
     left: 0;
     padding: 0 $spacing-xsm;
     position: fixed;
@@ -16,7 +16,7 @@
     align-items: center;
     display: flex;
     height: 100%;
-    max-width: 1024px;
+    max-width: 64rem;
     margin: 0 auto;
 }
 

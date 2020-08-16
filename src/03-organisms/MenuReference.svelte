@@ -26,7 +26,7 @@
         </p>
 
         <button on:click="{toggleMenu}">Toggle menu</button>
-        <div style="padding: 32px; background-color: #E3F1FD;">
+        <div style="padding: 2rem; background-color: #E3F1FD;">
             <div class="menu" class:menu--open="{isMenuOpen}">
                 <h2 class="menu__heading font-title">Settings</h2>
                 <label class="menu__switch switch-input">

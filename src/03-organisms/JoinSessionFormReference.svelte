@@ -20,7 +20,7 @@
             placed inside a card on larger screens
         </p>
 
-        <div style="height: 600px; background-color: #FAFAFA; padding: 32px;">
+        <div style="height: 37.5rem; background-color: #FAFAFA; padding: 2rem;">
             <form onsubmit="return false;" class="join-session-form">
                 <h2 class="join-session-form__heading font-headline">
                     Join Session

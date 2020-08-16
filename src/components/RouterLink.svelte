@@ -12,17 +12,17 @@
 
 <style>
     li {
-        border-bottom: 1px solid #b0bec5;
-        font-size: 20px;
+        border-bottom: 0.0625rem solid #b0bec5;
+        font-size: 1.25rem;
         line-height: 1;
-        padding: 16px;
+        padding: 1rem;
     }
 
     a {
         align-items: center;
         color: #1d60be;
         display: flex;
-        padding: 8px;
+        padding: 0.5rem;
         text-decoration: none;
     }
 
@@ -31,18 +31,18 @@
     }
 
     a > span {
-        margin-bottom: -4px;
+        margin-bottom: -0.25rem;
     }
 
     svg {
-        margin-right: 4px;
+        margin-right: 0.25rem;
     }
 
     li > span {
         display: block;
-        font-size: 18px;
-        margin-left: 8px;
-        margin-top: 8px;
+        font-size: 1.125rem;
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
     }
 </style>
 
