@@ -1,10 +1,127 @@
+body {
+    background-color: $color-blue-50;
+}
+
 .main {
-    height: calc(100vh - 4rem);
-    padding-top: 4rem;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 4rem 0;
+    width: 100%;
 }
 
 .create-session,
 .join-session {
-    display: flex;
     align-items: center;
+    background-color: $color-neutral-50;
+    display: flex;
+    /* The only 'main's that don't have a footer */
+    padding-bottom: 0;
+}
+
+.poker-cards {
+    display: none;
+}
+
+.poker-cards--inert {
+    filter: blur(3px);
+    pointer-events: none;
+    /* Prevent the blur from spilling into neighbour elements */
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+    .poker-cards {
+        align-content: flex-start;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        height: calc(100vh - 8rem);
+        justify-content: space-between;
+        overflow-y: scroll;
+        padding: 1.5rem 0.5rem 1.5rem 1.5rem;
+    }
+}
+
+@media screen and (min-width: 912px) {
+    .poker-cards {
+        padding: 1.5rem 2.5rem 1.5rem 2rem;
+    }
+}
+
+.poker-cards .poker-card {
+    margin: 0 1rem 1rem 0;
+}
+
+.lobby {
+    background-color: $color-neutral-0;
+    min-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .lobby {
+        min-width: 304px;
+    }
+}
+
+@media screen and (min-width: 834px) {
+    .lobby {
+        min-width: 360px;
+    }
+}
+
+.lobby__participants-list {
+    height: calc(100vh - 15rem - 8rem);
+}
+
+.session-details {
+    border-bottom: 1px solid $color-neutral-200;
+    padding: $spacing-md;
+}
+
+.session-details__name {
+    font-weight: normal;
+    margin: $spacing-sm 0;
+}
+
+.session-details__description {
+    margin: 0 0 $spacing-md;
+}
+
+.session-details__id {
+    display: flex;
+    margin: 0;
+}
+
+dl.session-details__id > dd {
+    color: $color-blue-800;
+}
+
+.session-details__copy {
+    align-items: center;
+    color: $color-blue-800;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacing-lg;
+    width: 100%;
+
+    /* Override element defaults */
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.session-details__copy-text {
+    text-shadow: $shadow-button-secondary;
+}
+
+.session-details__copy-icon {
+    filter: drop-shadow($shadow-button-secondary);
+}
+
+.session-details__participants {
+    margin: 0 0 $spacing-xsm;
 }

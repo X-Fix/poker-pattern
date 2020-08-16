@@ -23,6 +23,7 @@
     import HomePage from './04-layouts/HomePage.svelte';
     import CreateSessionPage from './04-layouts/CreateSessionPage.svelte';
     import JoinSessionPage from './04-layouts/JoinSessionPage.svelte';
+    import LobbyPage from './04-layouts/LobbyPage.svelte';
 
     const referenceSheets = {
         '/atoms/icons': Icons,
@@ -41,6 +42,7 @@
         '/layouts/home-page': HomePage,
         '/layouts/create-session-page': CreateSessionPage,
         '/layouts/join-session-page': JoinSessionPage,
+        '/layouts/lobby-page': LobbyPage,
     };
 
     let currentState;
