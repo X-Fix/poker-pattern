@@ -72,11 +72,8 @@ body {
     }
 }
 
-.lobby + .participants-list {
-    height: calc(100vh - 15rem - 8rem);
-}
-
-.lobby {
+.lobby,
+.new-vote {
     border-bottom: 1px solid $color-neutral-200;
     padding: $spacing-md;
 }
@@ -124,4 +121,28 @@ dl.lobby__id > dd {
 
 .lobby__participants-count {
     margin: 0 0 $spacing-xsm;
+}
+
+.session-panel .participants-list {
+    height: calc(100vh - 8rem);
+}
+
+.lobby + .participants-list,
+.new-vote + .participants-list {
+    height: calc(100vh - 15rem - 8rem);
+}
+
+.new-vote__title {
+    font-weight: normal;
+    margin: $spacing-sm 0 $spacing-lg;
+}
+
+.new-vote__participants-description {
+    margin: $spacing-xlg 0 0;
+}
+
+.new-vote__text-input {
+    /* Both of these styles are just to have the .new-vote nad .lobby elements naturally take up the same height */
+    display: inline-block; /* Disable margin collapse */
+    margin-bottom: $spacing-sm; /* Exceed the max-spacing by adding this to the margin-top of the next element */
 }
