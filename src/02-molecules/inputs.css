@@ -124,6 +124,7 @@
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    position: relative; /* Allow 'position: absolute' children to scroll with this element */
     width: 100%;
 }
 
