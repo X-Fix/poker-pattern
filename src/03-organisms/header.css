@@ -1,9 +1,11 @@
 .header {
     background-color: $color-blue-800;
     box-shadow: $shadow-header;
+    box-sizing: border-box;
     font-weight: 400;
     height: 64px;
     left: 0;
+    padding: 0 $spacing-xsm;
     position: fixed;
     text-align: center;
     top: 0;
