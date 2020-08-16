@@ -30,7 +30,7 @@
     flex: 1;
 }
 
-.participant--owner .participant__name {
+.participant--owner {
     text-decoration: underline;
 }
 
