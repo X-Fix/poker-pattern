@@ -96,7 +96,13 @@
 /* Wide */
 
 .button--wide {
-    width: 322px;
+    width: 304px;
+}
+
+@media screen and (min-width: 360px) {
+    .button--wide {
+        width: 322px;
+    }
 }
 
 /* Round */
