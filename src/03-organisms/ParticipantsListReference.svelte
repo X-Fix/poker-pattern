@@ -79,7 +79,7 @@
             <li class="participant participant--me">
                 <label class="switch-input">
                     <p class="switch-input__label">Oom</p>
-                    <input type="checkbox" name="participants" checked />
+                    <input type="checkbox" class="sr-only" name="participants" checked />
                     <span
                         class="switch-input__switch"
                         aria-hidden="true"></span>
@@ -88,7 +88,7 @@
             <li class="participant">
                 <label class="switch-input">
                     <p class="switch-input__label">Paul Treurnicht</p>
-                    <input type="checkbox" name="participants" />
+                    <input type="checkbox" class="sr-only" name="participants" />
                     <span
                         class="switch-input__switch"
                         aria-hidden="true"></span>

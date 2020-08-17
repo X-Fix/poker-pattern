@@ -18,7 +18,7 @@
 <main class="main">
     <section class="poker-cards poker-cards--inert">
         <label class="poker-card">
-            <input type="radio" name="poker-cards" />
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">
@@ -34,7 +34,7 @@
             </p>
         </label>
         <label class="poker-card">
-            <input type="radio" name="poker-cards" />
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">
@@ -50,7 +50,7 @@
             </p>
         </label>
         <label class="poker-card">
-            <input type="radio" name="poker-cards" />
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">
@@ -66,7 +66,7 @@
             </p>
         </label>
         <label class="poker-card">
-            <input type="radio" name="poker-cards" />
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">
@@ -82,7 +82,7 @@
             </p>
         </label>
         <label class="poker-card">
-            <input type="radio" name="poker-cards" />
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">
@@ -98,7 +98,7 @@
             </p>
         </label>
         <label class="poker-card">
-            <input type="radio" name="poker-cards" />
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">
@@ -114,7 +114,7 @@
             </p>
         </label>
         <label class="poker-card">
-            <input type="radio" name="poker-cards" />
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">
@@ -130,7 +130,7 @@
             </p>
         </label>
         <label class="poker-card">
-            <input type="radio" name="poker-cards" />
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">
@@ -146,7 +146,7 @@
             </p>
         </label>
         <label class="poker-card">
-            <input type="radio" name="poker-cards" />
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">
@@ -162,7 +162,7 @@
             </p>
         </label>
         <label class="poker-card">
-            <input type="radio" name="poker-cards" />
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">
@@ -178,7 +178,7 @@
             </p>
         </label>
         <label class="poker-card">
-            <input type="radio" name="poker-cards" />
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">
@@ -194,7 +194,7 @@
             </p>
         </label>
         <label class="poker-card">
-            <input type="radio" name="poker-cards" />
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">

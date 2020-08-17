@@ -43,7 +43,7 @@
                         Card Sequence
                     </legend>
                     <label class="create-session-form__radio-input radio-input">
-                        <input type="radio" name="card-sequence" />
+                        <input type="radio" class="sr-only" name="card-sequence" />
                         <span
                             class="radio-input__radio"
                             aria-hidden="true"></span>
@@ -52,7 +52,7 @@
                         </p>
                     </label>
                     <label class="create-session-form__radio-input radio-input">
-                        <input type="radio" name="card-sequence" />
+                        <input type="radio" class="sr-only" name="card-sequence" />
                         <span
                             class="radio-input__radio"
                             aria-hidden="true"></span>
@@ -61,7 +61,7 @@
                         </p>
                     </label>
                     <label class="create-session-form__radio-input radio-input">
-                        <input type="radio" name="card-sequence" />
+                        <input type="radio" class="sr-only" name="card-sequence" />
                         <span
                             class="radio-input__radio"
                             aria-hidden="true"></span>
@@ -70,7 +70,7 @@
                         </p>
                     </label>
                     <label class="create-session-form__radio-input radio-input">
-                        <input type="radio" name="card-sequence" />
+                        <input type="radio" class="sr-only" name="card-sequence" />
                         <span
                             class="radio-input__radio"
                             aria-hidden="true"></span>

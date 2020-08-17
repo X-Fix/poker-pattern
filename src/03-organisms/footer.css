@@ -26,9 +26,13 @@
 
 /* If there is a CTA sibling, hide it visibly (but keep it visible to screen readers) */
 .footer__cta + .footer__status-text {
-    opacity: 0;
-    position: absolute;
-    width: 0;
+    /* https://zellwk.com/blog/hide-content-accessibly/ */
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* Actions */

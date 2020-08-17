@@ -46,12 +46,6 @@
     margin-bottom: $spacing-sm;
 }
 
-.radio-input > input[type='radio'] {
-    /* Hide from visual view, but keep visable to screen-readers */
-    opacity: 0;
-    position: absolute;
-}
-
 .radio-input__radio {
     /*
     Make the span element large enough to contain the pseudo-elements so the :focus outline
@@ -133,12 +127,6 @@
     height: $font-size-body;
     line-height: $font-size-body;
     margin: 0;
-}
-
-.switch-input > input[type='checkbox'] {
-    /* Hide from visual view, but keep visable to screen-readers */
-    opacity: 0;
-    position: absolute;
 }
 
 .switch-input__switch {

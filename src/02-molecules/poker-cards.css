@@ -3,12 +3,6 @@
     display: block;
 }
 
-.poker-card input[type='radio'] {
-    /* Hide from visual view, but keep visable to screen-readers */
-    opacity: 0;
-    position: absolute;
-}
-
 .poker-card__card {
     background-color: $color-neutral-0;
     border-radius: 0.5rem;
@@ -51,7 +45,7 @@
     position: absolute;
     margin: 0 auto;
     text-align: center;
-    transform: translateX(-0.5625);
+    transform: translateX(-0.5625rem);
     width: 6.5rem;
 }
 

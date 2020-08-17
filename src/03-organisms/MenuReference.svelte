@@ -31,14 +31,14 @@
                 <h2 class="menu__heading font-title">Settings</h2>
                 <label class="menu__switch switch-input">
                     <p class="switch-input__label">Play notification sounds</p>
-                    <input type="checkbox" name="notifications" checked />
+                    <input type="checkbox" class="sr-only" name="notifications" checked />
                     <span
                         class="switch-input__switch"
                         aria-hidden="true"></span>
                 </label>
                 <label class="menu__switch switch-input">
                     <p class="switch-input__label">Use one-touch vote</p>
-                    <input type="checkbox" name="one-touch" />
+                    <input type="checkbox" class="sr-only" name="one-touch" />
                     <span
                         class="switch-input__switch"
                         aria-hidden="true"></span>
