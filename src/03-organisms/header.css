@@ -10,6 +10,7 @@
     text-align: center;
     top: 0;
     width: 100%;
+    z-index: 1; /* Keep the header above any panels sliding in from off-screen (participants, chat, etc. */
 }
 
 .header__content {
