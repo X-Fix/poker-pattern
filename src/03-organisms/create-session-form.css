@@ -20,12 +20,12 @@
 }
 
 .create-session-form__heading {
-    margin: 0;
+    margin: $spacing-sm 0 $spacing-xlg;
 }
 
-@media screen and (min-width: $min-width-360) {
+@media screen and (max-width: $max-width-360) {
     .create-session-form__heading {
-        margin: $spacing-sm 0 $spacing-xlg;
+        margin: 0;
     }
 }
 
@@ -33,21 +33,15 @@
     margin: $spacing-md 0;
 }
 
-@media screen and (min-width: $min-width-360) {
-    .create-session-form__text-input {
-        margin: $spacing-md 0;
-    }
-}
-
 .create-session-form__fieldset {
     border: none;
-    margin: $spacing-sm 0;
+    margin: $spacing-xlg 0;
     padding: 0;
 }
 
-@media screen and (min-width: $min-width-360) {
+@media screen and (max-width: $max-width-360) {
     .create-session-form__fieldset {
-        margin: $spacing-xlg 0;
+        margin: $spacing-sm 0;
     }
 }
 

@@ -18,12 +18,12 @@
     /* Placeholder text won't vertically align middle on Firefox so have to go with this weird top/bottom padding */
     padding: 0.75rem $spacing-md;
     text-align: left;
-    width: 18rem;
+    width: 20.5rem;
 }
 
-@media screen and (min-width: $min-width-360) {
+@media screen and (max-width: $max-width-360) {
     .text-input__text {
-        width: 20.5rem;
+        width: 18rem;
     }
 }
 

@@ -96,12 +96,12 @@
 /* Wide */
 
 .button--wide {
-    width: 18rem;
+    width: 20.5rem;
 }
 
-@media screen and (min-width: $min-width-360) {
+@media screen and (max-width: $max-width-360) {
     .button--wide {
-        width: 20.5rem;
+        width: 18rem;
     }
 }
 
