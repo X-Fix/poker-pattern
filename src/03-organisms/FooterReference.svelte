@@ -57,7 +57,7 @@
             <p class="fixed-in-footer fixed-in-footer--center" style="margin-bottom: 1rem;">I am in the footer</p>
             <footer class="footer"></footer>
         {:else if variation === 'left'}
-            <p>The --left variation ensures the content appears on the left side of the footer while appearing to have left-spacing and honouring the footer's max-width</p>
+            <p>The --left variation ensures the content appears on the left side of the footer while honouring the footer's max-width. Spacing is left up to the element itself</p>
 
             <p class="fixed-in-footer fixed-in-footer--left" style="margin-bottom: 1rem;">I am in the footer</p>
             <footer class="footer"></footer>
