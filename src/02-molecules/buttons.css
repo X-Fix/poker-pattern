@@ -96,7 +96,7 @@
 /* Wide */
 
 .button--wide {
-    width: 19rem;
+    width: 18rem;
 }
 
 @media screen and (min-width: 22.5rem) {
