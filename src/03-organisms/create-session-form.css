@@ -1,23 +1,54 @@
 .create-session-form {
     box-sizing: border-box;
-    height: 36.25rem;
+    height: 31.5rem;
     margin: 0 auto;
     padding: $spacing-md;
     width: 22.5rem;
 }
 
+@media screen and (min-width: 22.5rem) {
+    .create-session-form {
+        height: 36.25rem;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .create-session-form {
+        background-color: $color-neutral-0;
+        box-shadow: $shadow-form;
+    }
+}
+
 .create-session-form__heading {
-    margin: $spacing-sm 0 $spacing-xlg;
+    margin: 0;
+}
+
+@media screen and (min-width: 22.5rem) {
+    .create-session-form__heading {
+        margin: $spacing-sm 0 $spacing-xlg;
+    }
 }
 
 .create-session-form__text-input {
     margin: $spacing-md 0;
 }
 
+@media screen and (min-width: 22.5rem) {
+    .create-session-form__text-input {
+        margin: $spacing-md 0;
+    }
+}
+
 .create-session-form__fieldset {
     border: none;
-    margin: $spacing-xlg 0;
+    margin: $spacing-sm 0;
     padding: 0;
+}
+
+@media screen and (min-width: 22.5rem) {
+    .create-session-form__fieldset {
+        margin: $spacing-xlg 0;
+    }
 }
 
 .create-session-form__radio-input {
@@ -28,11 +59,4 @@
 
 .create-session-form__radio-input:last-child {
     margin-bottom: 0;
-}
-
-@media screen and (min-width: 48rem) {
-    .create-session-form {
-        background-color: $color-neutral-0;
-        box-shadow: $shadow-form;
-    }
 }
