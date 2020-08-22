@@ -12,7 +12,7 @@
     "cypress": "cypress open",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
     "lint": "eslint --ignore-path .gitignore .",
-    "serve": "sirv public --single",
+    "serve": "sirv public --single --host 0.0.0.0",
     "start": "rollup -c -w",
     "test": "jest",
     "test:watch": "jest --watch",
