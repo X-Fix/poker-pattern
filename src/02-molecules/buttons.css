@@ -48,7 +48,7 @@
 }
 
 /* Header */
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: $min-width-768) {
     .button--header {
         height: 2.5rem;
     }
@@ -59,7 +59,7 @@
     }
 }
 
-@media screen and (max-width: 47.9375rem) {
+@media screen and (max-width: $max-width-768) {
     .button--header {
         border-radius: 50%;
         padding: $spacing-sm;
@@ -99,7 +99,7 @@
     width: 18rem;
 }
 
-@media screen and (min-width: 22.5rem) {
+@media screen and (min-width: $min-width-360) {
     .button--wide {
         width: 20.5rem;
     }

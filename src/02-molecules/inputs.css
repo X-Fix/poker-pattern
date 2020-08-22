@@ -21,7 +21,7 @@
     width: 18rem;
 }
 
-@media screen and (min-width: 22.5rem) {
+@media screen and (min-width: $min-width-360) {
     .text-input__text {
         width: 20.5rem;
     }

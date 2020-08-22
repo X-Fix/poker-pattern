@@ -6,13 +6,13 @@
     width: 22.5rem;
 }
 
-@media screen and (min-width: 22.5rem) {
+@media screen and (min-width: $min-width-360) {
     .create-session-form {
         height: 36.25rem;
     }
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: $min-width-768) {
     .create-session-form {
         background-color: $color-neutral-0;
         box-shadow: $shadow-form;
@@ -23,7 +23,7 @@
     margin: 0;
 }
 
-@media screen and (min-width: 22.5rem) {
+@media screen and (min-width: $min-width-360) {
     .create-session-form__heading {
         margin: $spacing-sm 0 $spacing-xlg;
     }
@@ -33,7 +33,7 @@
     margin: $spacing-md 0;
 }
 
-@media screen and (min-width: 22.5rem) {
+@media screen and (min-width: $min-width-360) {
     .create-session-form__text-input {
         margin: $spacing-md 0;
     }
@@ -45,7 +45,7 @@
     padding: 0;
 }
 
-@media screen and (min-width: 22.5rem) {
+@media screen and (min-width: $min-width-360) {
     .create-session-form__fieldset {
         margin: $spacing-xlg 0;
     }

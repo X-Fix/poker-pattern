@@ -31,21 +31,21 @@
 }
 
 .fixed-in-footer--left {
-    left: $spacing-md;
+    left: $spacing-sm;
 }
 
 @media screen and (min-width: 64rem) {
     .fixed-in-footer--left {
-        left: calc((100vw - 64rem) / 2 + $spacing-md);
+        left: calc((100vw - 64rem) / 2 + $spacing-sm);
     }
 }
 
 .fixed-in-footer--right {
-    right: $spacing-md;
+    right: $spacing-sm;
 }
 
 @media screen and (min-width: 64rem) {
     .fixed-in-footer--right {
-        right: calc((100vw - 64rem) / 2 + $spacing-md);
+        right: calc((100vw - 64rem) / 2 + $spacing-sm);
     }
 }

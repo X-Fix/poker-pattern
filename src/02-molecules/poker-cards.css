@@ -81,7 +81,7 @@
     color: $color-neutral-0;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: $min-width-768) {
     .poker-card__card {
         height: 11.625rem;
         padding: 0.625rem;

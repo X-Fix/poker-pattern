@@ -18,7 +18,7 @@
     margin-top: $spacing-md;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: $min-width-768) {
     .join-session-form {
         background-color: $color-neutral-0;
         box-shadow: $shadow-form;

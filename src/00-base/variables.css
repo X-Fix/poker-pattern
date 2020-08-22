@@ -75,3 +75,15 @@ $font-size-title: 1.5rem;
 $font-size-headline: 2rem;
 $font-size-card-small: 3rem;
 $font-size-card-large: 3.5rem;
+
+/* Viewports
+ * ------------------------------------------------------------------
+ */
+
+$min-width-360: 22.5rem;
+$min-width-768: 48rem;
+$min-width-1280: 80rem;
+
+$max-width-360: 22.4375rem;
+$max-width-768: 47.9375rem;
+$max-width-1280: 79.9375rem;
