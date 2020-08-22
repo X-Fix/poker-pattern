@@ -19,50 +19,33 @@
     max-width: 64rem;
 }
 
-.footer__content {
-    display: flex;
-    flex-direction: reverse;
+.fixed-in-footer {
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
 }
 
-/* If there is a CTA sibling, hide it visibly (but keep it visible to screen readers) */
-.footer__cta + .footer__status-text {
-    /* https://zellwk.com/blog/hide-content-accessibly/ */
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
+.fixed-in-footer--center {
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/* Actions */
-
-.footer--actions .footer__content {
-    opacity: 0;
-    position: absolute;
-    width: 0;
+.fixed-in-footer--left {
+    left: $spacing-md;
 }
 
-.footer--actions .footer__actions {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-@media screen and (min-width: 48rem) {
-    .footer--actions {
-        justify-content: space-between;
+@media screen and (min-width: 64rem) {
+    .fixed-in-footer--left {
+        left: calc((100vw - 64rem) / 2 + $spacing-md);
     }
+}
 
-    .footer--actions .footer__content {
-        opacity: 1;
-        position: static;
-        width: auto;
-    }
+.fixed-in-footer--right {
+    right: $spacing-md;
+}
 
-    .footer--actions .footer__actions {
-        display: flex;
-        justify-content: end;
-        width: auto;
+@media screen and (min-width: 64rem) {
+    .fixed-in-footer--right {
+        right: calc((100vw - 64rem) / 2 + $spacing-md);
     }
 }
