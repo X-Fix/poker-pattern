@@ -7,8 +7,10 @@ body {
     display: flex;
     height: 100vh;
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 64rem;
+    overflow: hidden;
     padding: 4rem 0;
+    position: relative;
     width: 100%;
 }
 
@@ -21,60 +23,112 @@ body {
     padding-bottom: 0;
 }
 
-.poker-cards {
-    display: none;
+.poker-cards-form {
+    height: calc(100vh - 8rem);
+    overflow-y: scroll;
 }
 
-.poker-cards--inert {
-    filter: blur(3px);
+.poker-cards-form__heading {
+    box-sizing: border-box;
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+    overflow-x: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: calc(100vw - 2rem);
+}
+
+.poker-cards-form__submit,
+.new-vote-form__submit {
+    margin-bottom: $spacing-sm;
+}
+
+.poker-cards {
+    align-content: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5rem 0.125rem;
+
+    /* Override fieldset defaults */
+    border: none;
+    margin: 0;
+}
+
+@media screen and (min-width: 22.5rem) {
+    .poker-cards {
+        padding: 1rem 0.5rem 1rem 1rem;
+    }
+}
+
+.poker-cards-form--inert {
+    filter: blur(0.1875rem);
     pointer-events: none;
     /* Prevent the blur from spilling into neighbour elements */
     z-index: -1;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
     .poker-cards {
-        align-content: flex-start;
-        box-sizing: border-box;
-        display: flex;
-        flex-wrap: wrap;
-        height: calc(100vh - 8rem);
-        justify-content: space-between;
-        overflow-y: scroll;
         padding: 1.5rem 0.5rem 1.5rem 1.5rem;
     }
 }
 
-@media screen and (min-width: 912px) {
+@media screen and (min-width: 57rem) {
     .poker-cards {
         padding: 1.5rem 2.5rem 1.5rem 2rem;
     }
 }
 
 .poker-cards .poker-card {
-    margin: 0 1rem 1rem 0;
+    margin: 0 0 0.25rem;
+}
+
+@media screen and (min-width: 22.5rem) {
+    .poker-cards .poker-card {
+        margin: 0 0.5rem 0.5rem 0;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .poker-cards .poker-card {
+        margin: 0 1rem 1rem 0;
+    }
 }
 
 .session-panel {
     background-color: $color-neutral-0;
+    right: 0;
     min-width: 100%;
+    position: absolute;
+    transform: translateX(101%);
+    transition: transform 0.25s ease-in-out;
 }
 
-@media screen and (min-width: 768px) {
+.session-panel--show {
+    /* Slide out from the side of the screen on smaller screens, otherwise just ignore the change */
+    transform: none;
+}
+
+@media screen and (min-width: 48rem) {
     .session-panel {
-        min-width: 304px;
+        min-width: 19rem;
+        position: static;
+        transform: none;
     }
 }
 
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 52.125rem) {
     .session-panel {
-        min-width: 360px;
+        min-width: 22.5rem;
     }
 }
 
 .lobby,
 .new-vote {
-    border-bottom: 1px solid $color-neutral-200;
+    border-bottom: 0.0625rem solid $color-neutral-200;
     padding: $spacing-md;
 }
 
@@ -142,7 +196,7 @@ dl.lobby__id > dd {
 }
 
 .new-vote__text-input {
-    /* Both of these styles are just to have the .new-vote nad .lobby elements naturally take up the same height */
+    /* Both of these styles are just to have the .new-vote and .lobby elements naturally take up the same height */
     display: inline-block; /* Disable margin collapse */
     margin-bottom: $spacing-sm; /* Exceed the max-spacing by adding this to the margin-top of the next element */
 }

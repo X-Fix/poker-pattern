@@ -25,6 +25,7 @@
     import JoinSessionPage from './04-layouts/JoinSessionPage.svelte';
     import LobbyPage from './04-layouts/LobbyPage.svelte';
     import NewVotePage from './04-layouts/NewVotePage.svelte';
+    import VotingPage from './04-layouts/VotingPage.svelte';
 
     const referenceSheets = {
         '/atoms/icons': Icons,
@@ -45,6 +46,7 @@
         '/layouts/join-session-page': JoinSessionPage,
         '/layouts/lobby-page': LobbyPage,
         '/layouts/new-vote-page': NewVotePage,
+        '/layouts/voting-page': VotingPage,
     };
 
     let currentState;
