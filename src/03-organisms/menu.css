@@ -21,9 +21,13 @@
     margin: $spacing-md 0 $spacing-sm;
 }
 
-.menu__switch,
+.menu__toggle-button,
 .menu__action {
-    margin-bottom: $spacing-sm;
+    margin-bottom: $spacing-xsm;
+}
+
+.menu__toggle-button.toggle-button {
+    padding: $spacing-xxsm;
 }
 
 .menu__action {
