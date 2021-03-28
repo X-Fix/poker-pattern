@@ -4,8 +4,8 @@
 
 <style>
     section {
-        padding: 0 0 16px;
-        border-bottom: 1px solid #90a4ae;
+        padding: 0 0 1rem;
+        border-bottom: 0.0625rem solid #90a4ae;
     }
 
     h2 {

@@ -1,12 +1,12 @@
 <style>
     div {
-        margin-top: 16px;
+        margin-top: 1rem;
     }
 
     code {
         background-color: #f0f0f0;
         display: inline-block;
-        padding: 8px;
+        padding: 0.5rem;
     }
 </style>
 

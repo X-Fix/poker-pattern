@@ -1,6 +1,7 @@
 @import '00-base/normalize.css';
 @import '00-base/variables.css';
-@import '00-base/typography';
+@import '00-base/typography.css';
+@import '00-base/utility.css';
 
 @import '01-atoms/icons.css';
 
@@ -17,3 +18,5 @@
 @import '03-organisms/join-session-form.css';
 @import '03-organisms/menu.css';
 @import '03-organisms/chat-panel.css';
+
+@import '04-layouts/layouts.css';

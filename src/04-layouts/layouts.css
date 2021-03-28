@@ -1,0 +1,233 @@
+body {
+    background-color: $color-blue-50;
+}
+
+.main {
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 64rem;
+    overflow: hidden;
+    padding: 4rem 0;
+    position: relative;
+    width: 100%;
+}
+
+.create-session,
+.join-session {
+    align-items: center;
+    background-color: $color-neutral-50;
+    display: flex;
+    /* The only '.main's that don't have a footer */
+    padding-bottom: 0;
+}
+
+.poker-cards-form {
+    height: calc(100vh - 8rem);
+    overflow-y: scroll;
+}
+
+.poker-cards-form__heading {
+    box-sizing: border-box;
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+    overflow-x: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: calc(100vw - 2rem);
+}
+
+.poker-cards-form__submit,
+.new-vote-form__submit {
+    margin-bottom: $spacing-sm;
+}
+
+.poker-cards {
+    align-content: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0.5rem 1rem 1rem;
+
+    /* Override fieldset defaults */
+    border: none;
+    margin: 0;
+}
+
+@media screen and (max-width: $max-width-360) {
+    .poker-cards {
+        padding: 0.5rem 0.125rem;
+    }
+}
+
+.poker-cards-form--inert {
+    filter: blur(0.1875rem);
+    pointer-events: none;
+    /* Prevent the blur from spilling into neighbour elements */
+    z-index: -1;
+}
+
+@media screen and (min-width: $min-width-768) {
+    .poker-cards {
+        padding: 1.5rem 0.5rem 1.5rem 1.5rem;
+    }
+}
+
+@media screen and (min-width: 57rem) {
+    .poker-cards {
+        padding: 1.5rem 2.5rem 1.5rem 2rem;
+    }
+}
+
+.poker-cards .poker-card {
+    margin: 0 0 0.25rem;
+}
+
+@media screen and (min-width: $min-width-360) {
+    .poker-cards .poker-card {
+        margin: 0 0.5rem 0.5rem 0;
+    }
+}
+
+@media screen and (min-width: $min-width-768) {
+    .poker-cards .poker-card {
+        margin: 0 1rem 1rem 0;
+    }
+}
+
+.session-panel {
+    background-color: $color-neutral-0;
+    right: 0;
+    min-width: 100%;
+    position: absolute;
+    transform: translateX(101%);
+    transition: transform 0.25s ease-in-out;
+}
+
+.session-panel--show {
+    /* Slide out from the side of the screen on smaller screens, otherwise just ignore the change */
+    transform: none;
+}
+
+@media screen and (min-width: $min-width-768) {
+    .session-panel {
+        min-width: 19rem;
+        position: static;
+        transform: none;
+    }
+}
+
+@media screen and (min-width: 52.125rem) {
+    .session-panel {
+        min-width: 22.5rem;
+    }
+}
+
+.session-panel__status {
+    font-weight: normal;
+    margin: $spacing-md $spacing-md $spacing-md $spacing-lg;
+}
+
+.session-panel__actions {
+    box-sizing: border-box;
+    display: flex;
+    height: 4rem;
+    padding: $spacing-sm $spacing-sm $spacing-sm 0;
+}
+
+/* Some dirty overrides to get it to fit on tiny screens nicely */
+@media screen and (max-width: $max-width-360) {
+    .session-panel__actions .button {
+        padding: 0 $spacing-sm;
+    }
+
+    .session-panel__actions .button.button--secondary {
+        padding: 0 $spacing-xsm;
+    }
+}
+
+@media screen and (max-width: $max-width-768) {
+    .session-panel__actions {
+        background-color: $color-neutral-0;
+        justify-content: space-evenly;
+        width: 100vw;
+    }
+}
+
+.lobby,
+.new-vote {
+    border-bottom: 0.0625rem solid $color-neutral-200;
+    padding: $spacing-md;
+}
+
+.lobby__title {
+    font-weight: normal;
+    margin: $spacing-sm 0;
+}
+
+.lobby__description {
+    margin: 0 0 $spacing-md;
+}
+
+.lobby__id {
+    display: flex;
+    margin: 0;
+}
+
+dl.lobby__id > dd {
+    color: $color-blue-800;
+}
+
+.lobby__copy-link {
+    align-items: center;
+    color: $color-blue-800;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacing-lg;
+    width: 100%;
+
+    /* Override element defaults */
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.lobby__copy-link-text {
+    text-shadow: $shadow-button-secondary;
+}
+
+.lobby__copy-link-icon {
+    filter: drop-shadow($shadow-button-secondary);
+}
+
+.lobby__participants-count {
+    margin: 0 0 $spacing-xsm;
+}
+
+.session-panel .participants-list {
+    height: calc(100vh - 8rem);
+}
+
+.lobby + .participants-list,
+.new-vote + .participants-list {
+    height: calc(100vh - 15rem - 8rem);
+}
+
+.new-vote__title {
+    font-weight: normal;
+    margin: $spacing-sm 0 $spacing-lg;
+}
+
+.new-vote__participants-description {
+    margin: $spacing-xlg 0 0;
+}
+
+.new-vote__text-input {
+    /* Both of these styles are just to have the .new-vote and .lobby elements naturally take up the same height */
+    display: inline-block; /* Disable margin collapse */
+    margin-bottom: $spacing-sm; /* Exceed the max-spacing by adding this to the margin-top of the next element */
+}

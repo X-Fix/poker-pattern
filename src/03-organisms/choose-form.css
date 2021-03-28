@@ -11,7 +11,7 @@
 .choose-form__create-session,
 .choose-form__join-session {
     box-shadow: $shadow-primary;
-    margin: 40px;
+    margin: 2.5rem;
 }
 
 @media screen and (orientation: landscape) {

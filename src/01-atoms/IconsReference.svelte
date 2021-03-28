@@ -27,7 +27,7 @@
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        margin: -16px 0 0;
+        margin: -1rem 0 0;
         padding: 0;
     }
 </style>

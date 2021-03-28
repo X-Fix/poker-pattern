@@ -1,20 +1,23 @@
 .header {
     background-color: $color-blue-800;
     box-shadow: $shadow-header;
+    box-sizing: border-box;
     font-weight: 400;
-    height: 64px;
+    height: 4rem;
     left: 0;
+    padding: 0 $spacing-xsm;
     position: fixed;
     text-align: center;
     top: 0;
     width: 100%;
+    z-index: 1; /* Keep the header above any panels sliding in from off-screen (participants, chat, etc. */
 }
 
 .header__content {
     align-items: center;
     display: flex;
     height: 100%;
-    max-width: 1024px;
+    max-width: 64rem;
     margin: 0 auto;
 }
 

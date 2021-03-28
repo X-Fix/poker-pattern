@@ -11,8 +11,8 @@
 }
 
 .menu--open {
-    border-bottom: 2px solid $color-blue-800;
-    height: 232px;
+    border-bottom: 0.125rem solid $color-blue-800;
+    height: 14.5rem;
     padding-bottom: $spacing-sm;
     padding-top: $spacing-sm;
 }
@@ -21,9 +21,13 @@
     margin: $spacing-md 0 $spacing-sm;
 }
 
-.menu__switch,
+.menu__toggle-button,
 .menu__action {
-    margin-bottom: $spacing-sm;
+    margin-bottom: $spacing-xsm;
+}
+
+.menu__toggle-button.toggle-button {
+    padding: $spacing-xxsm;
 }
 
 .menu__action {
@@ -47,8 +51,8 @@
     filter: drop-shadow($shadow-button-secondary);
 }
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 35.5rem) {
     .menu {
-        width: 360px;
+        width: 22.5rem;
     }
 }

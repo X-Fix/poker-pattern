@@ -3,21 +3,16 @@
     display: block;
 }
 
-.poker-card input[type='radio'] {
-    /* Hide from visual view, but keep visable to screen-readers */
-    opacity: 0;
-    position: absolute;
-}
-
 .poker-card__card {
-    border-radius: 8px;
+    background-color: $color-neutral-0;
+    border-radius: 0.5rem;
     box-shadow: $shadow-form;
     box-sizing: border-box;
     display: block;
-    height: 148px;
+    height: 9.25rem;
     margin: 0;
     padding: $spacing-sm;
-    width: 104px;
+    width: 6.5rem;
 }
 
 .poker-card__card:hover {
@@ -27,10 +22,12 @@
 
 .poker-card__labels {
     background-color: transparent;
-    border: 1px solid $color-blue-800;
+    border: 0.0625rem solid $color-blue-800;
     box-sizing: border-box;
     display: flex;
     height: 100%;
+    /* Don't leave the position:absolute middle label behind when scrolling */
+    position: relative;
 }
 
 .poker-card__top-left-label,
@@ -44,12 +41,12 @@
 
 .poker-card__center-label {
     align-self: center;
-    font-size: 3rem;
+    font-size: $font-size-card-small;
     position: absolute;
     margin: 0 auto;
     text-align: center;
-    transform: translateX(-9px);
-    width: 104px;
+    transform: translateX(-0.5625rem);
+    width: 6.5rem;
 }
 
 .poker-card__bottom-right-label {
@@ -84,15 +81,15 @@
     color: $color-neutral-0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $min-width-768) {
     .poker-card__card {
-        height: 186px;
-        padding: 10px;
-        width: 128px;
+        height: 11.625rem;
+        padding: 0.625rem;
+        width: 8rem;
     }
 
     .poker-card__labels {
-        border-width: 2px;
+        border-width: 0.125rem;
     }
 
     .poker-card__top-left-label,
@@ -102,7 +99,8 @@
     }
 
     .poker-card__center-label {
-        transform: translateX(-12px);
-        width: 128px;
+        font-size: $font-size-card-large;
+        transform: translateX(-0.75rem);
+        width: 8rem;
     }
 }

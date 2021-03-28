@@ -19,7 +19,7 @@
             background is transparent but on larger screens the elements are
             placed inside a card
         </p>
-        <div style="height: 600px; background-color: #FAFAFA; padding: 32px;">
+        <div style="height: 37.5rem; background-color: #FAFAFA; padding: 2rem;">
             <form onsubmit="return false;" class="create-session-form">
                 <h2 class="create-session-form__heading font-headline">
                     Create New Session
@@ -43,7 +43,7 @@
                         Card Sequence
                     </legend>
                     <label class="create-session-form__radio-input radio-input">
-                        <input type="radio" name="card-sequence" />
+                        <input type="radio" class="sr-only" name="card-sequence" />
                         <span
                             class="radio-input__radio"
                             aria-hidden="true"></span>
@@ -52,7 +52,7 @@
                         </p>
                     </label>
                     <label class="create-session-form__radio-input radio-input">
-                        <input type="radio" name="card-sequence" />
+                        <input type="radio" class="sr-only" name="card-sequence" />
                         <span
                             class="radio-input__radio"
                             aria-hidden="true"></span>
@@ -61,7 +61,7 @@
                         </p>
                     </label>
                     <label class="create-session-form__radio-input radio-input">
-                        <input type="radio" name="card-sequence" />
+                        <input type="radio" class="sr-only" name="card-sequence" />
                         <span
                             class="radio-input__radio"
                             aria-hidden="true"></span>
@@ -70,7 +70,7 @@
                         </p>
                     </label>
                     <label class="create-session-form__radio-input radio-input">
-                        <input type="radio" name="card-sequence" />
+                        <input type="radio" class="sr-only" name="card-sequence" />
                         <span
                             class="radio-input__radio"
                             aria-hidden="true"></span>

@@ -26,7 +26,7 @@
             larger cards
         </p>
         <label class="poker-card">
-            <input type="radio" name="poker-cards" />
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">
@@ -41,8 +41,8 @@
                 </span>
             </p>
         </label>
-        <label class="poker-card" style="margin-top: 8px;">
-            <input type="radio" name="poker-cards" />
+        <label class="poker-card" style="margin-top: 0.5rem;">
+            <input type="radio" class="sr-only" name="poker-cards" />
             <p class="poker-card__card">
                 <span class="poker-card__labels">
                     <span class="poker-card__top-left-label" aria-hidden="true">

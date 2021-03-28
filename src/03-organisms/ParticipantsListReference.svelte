@@ -21,7 +21,7 @@
             On their own the participant cards are very simple. Just a bottom
             border and some spacing
         </p>
-        <ul class="participants-list" style="width: 324px;">
+        <ul class="participants-list" style="width: 20.25rem;">
             <li class="participant">
                 <span class="participant__name font-body">Oom</span>
             </li>
@@ -39,7 +39,7 @@
 
         <p>"--me" indicates the participant card represents the viewing user</p>
 
-        <ul class="participants-list" style="width: 324px;">
+        <ul class="participants-list" style="width: 20.25rem;">
             <li class="participant participant--me">
                 <span class="participant__name font-body">Oom</span>
             </li>
@@ -50,7 +50,7 @@
             owner
         </p>
 
-        <ul class="participants-list" style="width: 324px;">
+        <ul class="participants-list" style="width: 20.25rem;">
             <li class="participant participant--owner">
                 <span class="participant__name font-body">Sinta</span>
             </li>
@@ -60,7 +60,7 @@
             "--outlier" indicates this participant's score is an overall outlier
         </p>
 
-        <ul class="participants-list" style="width: 324px;">
+        <ul class="participants-list" style="width: 20.25rem;">
             <li class="participant participant--outlier">
                 <span class="participant__name font-body">Cameron</span>
                 <span class="participant__score font-headline">5</span>
@@ -75,11 +75,11 @@
             participation in the next vote
         </p>
 
-        <ul class="participants-list" style="width: 324px;">
+        <ul class="participants-list" style="width: 20.25rem;">
             <li class="participant participant--me">
                 <label class="switch-input">
                     <p class="switch-input__label">Oom</p>
-                    <input type="checkbox" name="participants" checked />
+                    <input type="checkbox" class="sr-only" name="participants" checked />
                     <span
                         class="switch-input__switch"
                         aria-hidden="true"></span>
@@ -88,7 +88,7 @@
             <li class="participant">
                 <label class="switch-input">
                     <p class="switch-input__label">Paul Treurnicht</p>
-                    <input type="checkbox" name="participants" />
+                    <input type="checkbox" class="sr-only" name="participants" />
                     <span
                         class="switch-input__switch"
                         aria-hidden="true"></span>
@@ -111,7 +111,7 @@
             aria-label attribute
         </p>
 
-        <ul class="participants-list" style="width: 324px;">
+        <ul class="participants-list" style="width: 20.25rem;">
             <li class="participant participant--me">
                 <span class="participant__name font-body">Oom</span>
                 <svg
@@ -186,7 +186,7 @@
             the outliers are highlighted for quick reference
         </p>
 
-        <ul class="participants-list" style="width: 324px;">
+        <ul class="participants-list" style="width: 20.25rem;">
             <li class="participant participant--me participant--outlier">
                 <span class="participant__name font-body">Oom</span>
                 <span class="participant__score font-headline">8</span>

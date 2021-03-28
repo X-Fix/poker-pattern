@@ -15,6 +15,15 @@ const CREATE_SESSION_FORM_STATE_NAME = '/organisms/create-session-form';
 const JOIN_SESSION_FORM_STATE_NAME = '/organisms/join-session-form';
 const MENU_STATE_NAME = '/organisms/menu';
 const CHAT_PANEL_STATE_NAME = '/organisms/chat-panel';
+const LAYOUTS_STATE_NAME = '/layouts';
+const HOME_PAGE_STATE_NAME = '/layouts/home-page';
+const CREATE_SESSION_PAGE_STATE_NAME = '/layouts/create-session-page';
+const JOIN_SESSION_PAGE_STATE_NAME = '/layouts/join-session-page';
+const LOBBY_PAGE_STATE_NAME = '/layouts/lobby-page';
+const NEW_VOTE_PAGE_STATE_NAME = '/layouts/new-vote-page';
+const VOTING_PAGE_STATE_NAME = '/layouts/voting-page';
+const VOTING_DONE_PAGE_STATE_NAME = '/layouts/voting-done-page';
+
 const HOME_TRANSITION_NAME = 'home';
 const ATOMS_TRANSITION_NAME = 'atoms';
 const ICONS_TRANSITION_NAME = 'icons';
@@ -32,6 +41,14 @@ const CREATE_SESSION_FORM_TRANSITION_NAME = 'create-session-form';
 const JOIN_SESSION_FORM_TRANSITION_NAME = 'join-session-form';
 const MENU_TRANSITION_NAME = 'menu';
 const CHAT_PANEL_TRANSITION_NAME = 'chat-panel';
+const LAYOUTS_TRANSITION_NAME = 'layouts';
+const HOME_PAGE_TRANSITION_NAME = 'home-page';
+const CREATE_SESSION_PAGE_TRANSITION_NAME = 'create-session-page';
+const JOIN_SESSION_PAGE_TRANSITION_NAME = 'join-session-page';
+const LOBBY_PAGE_TRANSITION_NAME = 'lobby-page';
+const NEW_VOTE_PAGE_TRANSITION_NAME = 'new-vote-page';
+const VOTING_PAGE_TRANSITION_NAME = 'voting-page';
+const VOTING_DONE_PAGE_TRANSITION_NAME = 'voting-done-page';
 
 const stateMachineDefinition = {
     initialStateName: HOME_STATE_NAME,
@@ -58,6 +75,13 @@ const stateMachineDefinition = {
                     'A collection of larger components created by combining various atoms and/or molecules',
                 transitionName: ORGANISMS_TRANSITION_NAME,
             },
+            {
+                icon: 'folder',
+                title: 'Layouts >',
+                description:
+                    'A collection of layouts using all the defined elements to create a full screen',
+                transitionName: LAYOUTS_TRANSITION_NAME,
+            },
         ],
         transitions: {
             [ATOMS_TRANSITION_NAME]: {
@@ -76,6 +100,12 @@ const stateMachineDefinition = {
                 targetState: ORGANISMS_STATE_NAME,
                 action() {
                     console.log('Redirecting to Organisms');
+                },
+            },
+            [LAYOUTS_TRANSITION_NAME]: {
+                targetState: LAYOUTS_STATE_NAME,
+                action() {
+                    console.log('Redirecting to Layouts');
                 },
             },
         },
@@ -693,6 +723,332 @@ const stateMachineDefinition = {
                 targetState: ORGANISMS_STATE_NAME,
                 action() {
                     console.log('Going back to Organisms');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
+    },
+    [LAYOUTS_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back a level',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+            {
+                icon: 'component',
+                title: 'Home Page',
+                description: 'The landing page for the app',
+                transitionName: HOME_PAGE_TRANSITION_NAME,
+            },
+            {
+                icon: 'component',
+                title: 'Create Session Page',
+                description:
+                    'The page where the participant creates a new session',
+                transitionName: CREATE_SESSION_PAGE_TRANSITION_NAME,
+            },
+            {
+                icon: 'component',
+                title: 'Join Session Page',
+                description:
+                    'The page where the participant joins an existing session',
+                transitionName: JOIN_SESSION_PAGE_TRANSITION_NAME,
+            },
+            {
+                icon: 'component',
+                title: 'Lobby Page',
+                description:
+                    'The lobby participants arrive in before starting a new vote',
+                transitionName: LOBBY_PAGE_TRANSITION_NAME,
+            },
+            {
+                icon: 'component',
+                title: 'New Vote Page',
+                description:
+                    'The new vote page the session owner sees when creating a new vote',
+                transitionName: NEW_VOTE_PAGE_TRANSITION_NAME,
+            },
+            {
+                icon: 'component',
+                title: 'Voting Page',
+                description:
+                    'The new voting page participants see when a vote is in progress',
+                transitionName: VOTING_PAGE_TRANSITION_NAME,
+            },
+            {
+                icon: 'component',
+                title: 'Voting Done Page',
+                description:
+                    'The voting done page participants see when a vote is finished',
+                transitionName: VOTING_DONE_PAGE_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+            [HOME_PAGE_TRANSITION_NAME]: {
+                targetState: HOME_PAGE_STATE_NAME,
+                action() {
+                    console.log('Opening Home Page');
+                },
+            },
+            [CREATE_SESSION_PAGE_TRANSITION_NAME]: {
+                targetState: CREATE_SESSION_PAGE_STATE_NAME,
+                action() {
+                    console.log('Opening Create Session Page');
+                },
+            },
+            [JOIN_SESSION_PAGE_TRANSITION_NAME]: {
+                targetState: JOIN_SESSION_PAGE_STATE_NAME,
+                action() {
+                    console.log('Opening Join Session Page');
+                },
+            },
+            [LOBBY_PAGE_TRANSITION_NAME]: {
+                targetState: LOBBY_PAGE_STATE_NAME,
+                action() {
+                    console.log('Opening Lobby Page');
+                },
+            },
+            [NEW_VOTE_PAGE_TRANSITION_NAME]: {
+                targetState: NEW_VOTE_PAGE_STATE_NAME,
+                action() {
+                    console.log('Opening New Vote Page');
+                },
+            },
+            [VOTING_PAGE_TRANSITION_NAME]: {
+                targetState: VOTING_PAGE_STATE_NAME,
+                action() {
+                    console.log('Opening Voting Page');
+                },
+            },
+            [VOTING_DONE_PAGE_TRANSITION_NAME]: {
+                targetState: VOTING_DONE_PAGE_STATE_NAME,
+                action() {
+                    console.log('Opening Voting Done Page');
+                },
+            },
+        },
+        type: 'folder',
+    },
+    [HOME_PAGE_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Layouts',
+                transitionName: LAYOUTS_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [LAYOUTS_TRANSITION_NAME]: {
+                targetState: LAYOUTS_STATE_NAME,
+                action() {
+                    console.log('Going back to Layouts');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
+    },
+    [CREATE_SESSION_PAGE_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Layouts',
+                transitionName: LAYOUTS_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [LAYOUTS_TRANSITION_NAME]: {
+                targetState: LAYOUTS_STATE_NAME,
+                action() {
+                    console.log('Going back to Layouts');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
+    },
+    [JOIN_SESSION_PAGE_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Layouts',
+                transitionName: LAYOUTS_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [LAYOUTS_TRANSITION_NAME]: {
+                targetState: LAYOUTS_STATE_NAME,
+                action() {
+                    console.log('Going back to Layouts');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
+    },
+    [LOBBY_PAGE_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Layouts',
+                transitionName: LAYOUTS_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [LAYOUTS_TRANSITION_NAME]: {
+                targetState: LAYOUTS_STATE_NAME,
+                action() {
+                    console.log('Going back to Layouts');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
+    },
+    [NEW_VOTE_PAGE_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Layouts',
+                transitionName: LAYOUTS_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [LAYOUTS_TRANSITION_NAME]: {
+                targetState: LAYOUTS_STATE_NAME,
+                action() {
+                    console.log('Going back to Layouts');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
+    },
+    [VOTING_PAGE_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Layouts',
+                transitionName: LAYOUTS_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [LAYOUTS_TRANSITION_NAME]: {
+                targetState: LAYOUTS_STATE_NAME,
+                action() {
+                    console.log('Going back to Layouts');
+                },
+            },
+            [HOME_TRANSITION_NAME]: {
+                targetState: HOME_STATE_NAME,
+                action() {
+                    console.log('Going back home');
+                },
+            },
+        },
+        type: 'component',
+    },
+    [VOTING_DONE_PAGE_STATE_NAME]: {
+        options: [
+            {
+                icon: 'folder',
+                title: '< Back',
+                description: 'Go back to Layouts',
+                transitionName: LAYOUTS_TRANSITION_NAME,
+            },
+            {
+                icon: 'folder',
+                title: 'Home',
+                description: 'Go back to Home screen',
+                transitionName: HOME_TRANSITION_NAME,
+            },
+        ],
+        transitions: {
+            [LAYOUTS_TRANSITION_NAME]: {
+                targetState: LAYOUTS_STATE_NAME,
+                action() {
+                    console.log('Going back to Layouts');
                 },
             },
             [HOME_TRANSITION_NAME]: {

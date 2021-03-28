@@ -2,9 +2,21 @@
     import ReferenceSheet from '../components/ReferenceSheet.svelte';
     import ReferenceSection from '../components/ReferenceSection.svelte';
 
-    let isMenuOpen = false;
+    let isMenuOpen = true;
+    const settings = {
+        displayAnnouncements: true,
+        displayTips: false,
+        playNotificationSounds: true,
+        useOneTouchVote: false,
+    };
+
     function toggleMenu() {
         isMenuOpen = !isMenuOpen;
+    }
+
+    function toggleSetting(event) {
+        const setting = event.currentTarget.value;
+        settings[setting] = !settings[setting];
     }
 </script>
 
@@ -26,23 +38,55 @@
         </p>
 
         <button on:click="{toggleMenu}">Toggle menu</button>
-        <div style="padding: 32px; background-color: #E3F1FD;">
+        <div style="padding: 2rem; background-color: #E3F1FD;">
             <div class="menu" class:menu--open="{isMenuOpen}">
                 <h2 class="menu__heading font-title">Settings</h2>
-                <label class="menu__switch switch-input">
-                    <p class="switch-input__label">Play notification sounds</p>
-                    <input type="checkbox" name="notifications" checked />
+                <button
+                    class="menu__toggle-button toggle-button"
+                    type="button"
+                    aria-pressed="{settings.displayAnnouncements}"
+                    on:click="{toggleSetting}"
+                    value="displayAnnouncements">
+                    <span class="toggle-button__label">
+                        Display announcements
+                    </span>
                     <span
-                        class="switch-input__switch"
+                        class="toggle-button__switch"
                         aria-hidden="true"></span>
-                </label>
-                <label class="menu__switch switch-input">
-                    <p class="switch-input__label">Use one-touch vote</p>
-                    <input type="checkbox" name="one-touch" />
+                </button>
+                <button
+                    class="menu__toggle-button toggle-button"
+                    type="button"
+                    aria-pressed="{settings.displayTips}"
+                    on:click="{toggleSetting}"
+                    value="displayTips">
+                    <span class="toggle-button__label">Display tips</span>
                     <span
-                        class="switch-input__switch"
+                        class="toggle-button__switch"
                         aria-hidden="true"></span>
-                </label>
+                </button>
+                <button
+                    class="menu__toggle-button toggle-button"
+                    type="button"
+                    aria-pressed="{settings.playNotificationSounds}"
+                    on:click="{toggleSetting}"
+                    value="playNotificationSounds">
+                    <span class="toggle-button__label">Play notifications</span>
+                    <span
+                        class="toggle-button__switch"
+                        aria-hidden="true"></span>
+                </button>
+                <button
+                    class="menu__toggle-button toggle-button"
+                    type="button"
+                    aria-pressed="{settings.useOneTouchVote}"
+                    on:click="{toggleSetting}"
+                    value="useOneTouchVote">
+                    <span class="toggle-button__label">Use one-touch vote</span>
+                    <span
+                        class="toggle-button__switch"
+                        aria-hidden="true"></span>
+                </button>
                 <h2 class="menu__heading font-title">Actions</h2>
                 <button class="menu__action">
                     <span class="menu__action-text font-body">

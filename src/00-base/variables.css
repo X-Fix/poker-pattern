@@ -23,17 +23,17 @@ $color-green-100: #e3f6ec;
  */
 $shadow: rgba(0, 0, 0, 0.25);
 
-$shadow-button-primary: 2px 3px 1px rgba(0, 0, 0, 0.35);
-$shadow-button-secondary: 2px 3px 2px $shadow;
-$shadow-button-tertiary: 2px 3px 1px rgba(0, 0, 0, 0.375);
+$shadow-button-primary: 0.125rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.35);
+$shadow-button-secondary: 0.125rem 0.1875rem 0.125rem $shadow;
+$shadow-button-tertiary: 0.125rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.375);
 
-$shadow-primary: 2px 3px 2px $shadow;
-$shadow-secondary: 0px 2px 8px $shadow;
-$shadow-tertiary: inset 1px 1px 2px $shadow;
+$shadow-primary: 0.125rem 0.1875rem 0.125rem $shadow;
+$shadow-secondary: 0 0.125rem 0.5rem $shadow;
+$shadow-tertiary: inset 0.0625rem 0.0625rem 0.125rem $shadow;
 
-$shadow-footer: 0 -2px 4px $shadow;
-$shadow-header: 0 2px 4px $shadow;
-$shadow-form: 0 2px 8px $shadow;
+$shadow-footer: 0 -0.125rem 0.25rem $shadow;
+$shadow-header: 0 0.125rem 0.25rem $shadow;
+$shadow-form: 0 0.125rem 0.5rem $shadow;
 
 /* There is overlap between the chat-bubble shadow and the triangle's 'shadow', causing a darker
  * shadow where they overlap. To avoid this we make an exception in this instance, and use a solid
@@ -44,12 +44,12 @@ $shadow-chat-bubble: #bfbfbf;
 /* Spacing
  * ------------------------------------------------------------------
  */
-$spacing-xxsm: 2px;
-$spacing-xsm: 4px;
-$spacing-sm: 08px;
-$spacing-md: 16px;
-$spacing-lg: 24px;
-$spacing-xlg: 32px;
+$spacing-xxsm: 0.125rem;
+$spacing-xsm: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xlg: 2rem;
 
 /* Typography
  * ------------------------------------------------------------------
@@ -74,4 +74,16 @@ $font-size-body: 1.125rem;
 $font-size-title: 1.5rem;
 $font-size-headline: 2rem;
 $font-size-card-small: 3rem;
-$font-size-card-large: 4rem;
+$font-size-card-large: 3.5rem;
+
+/* Viewports
+ * ------------------------------------------------------------------
+ */
+
+$min-width-360: 22.5rem;
+$min-width-768: 48rem;
+$min-width-1280: 80rem;
+
+$max-width-360: 22.4375rem;
+$max-width-768: 47.9375rem;
+$max-width-1280: 79.9375rem;

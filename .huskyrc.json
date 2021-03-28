@@ -1,6 +1,6 @@
 {
-    "hooks": {
-        "pre-commit": "lint-staged -c ./lintstagedrc.json",
-        "pre-push": "jest"
-    }
+  "hooks": {
+    "pre-commit": "lint-staged -c ./lintstagedrc.json",
+    "pre-push": "jest"
+  }
 }

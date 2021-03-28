@@ -5,9 +5,11 @@
 
 <style>
     ul {
+        background-color: white;
+        height: 100vh;
         list-style: none;
-        padding: 0;
-        margin: 32px;
+        padding: 2rem;
+        margin: 0;
     }
 </style>
 
