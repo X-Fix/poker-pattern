@@ -129,3 +129,66 @@
 .button--square .button__text {
     margin: 0 auto;
 }
+
+/* Toggle button */
+
+.toggle-button {
+    /* Button overrides */
+    background-color: $color-neutral-0;
+    border: none;
+    padding: 0;
+
+    /* Switch styles */
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    position: relative; /* Allow 'position: absolute' children to scroll with this element */
+    width: 100%;
+}
+
+.toggle-button__label {
+    font-size: $font-size-body;
+    height: $font-size-body;
+    line-height: $font-size-body;
+    margin: 0;
+}
+
+.toggle-button__switch {
+    align-items: center;
+    display: flex;
+    height: 1.5rem;
+    justify-content: center;
+    width: 3rem;
+}
+
+.toggle-button__switch:before {
+    background-color: $color-neutral-300;
+    border-radius: 0.375rem;
+    content: '';
+    display: block;
+    height: 0.75rem;
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.6, 1);
+    width: 2.5rem;
+}
+
+button[aria-pressed='true'].toggle-button .toggle-button__switch:before {
+    background-color: $color-blue-700;
+}
+
+.toggle-button__switch:after {
+    background-color: $color-neutral-0;
+    border-radius: 50%;
+    box-shadow: $shadow-secondary;
+    content: '';
+    height: 1.5rem;
+    position: absolute;
+    transform: translateX(-0.75rem);
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.6, 1);
+    width: 1.5rem;
+}
+
+button[aria-pressed='true'].toggle-button .toggle-button__switch:after {
+    background-color: $color-blue-800;
+    transform: translateX(0.75rem);
+}
